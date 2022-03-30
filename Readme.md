@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Даниил Суворов](https://up.htmlacademy.ru/adaptive/25/user/1827303).
-* Наставник: [Константин Соколов](https://htmlacademy.ru/profile/k_sokolov).
+* Наставник: [Константин Соколов](https://htmlacademy.ru/profile/id243814).
 
 ---
 
