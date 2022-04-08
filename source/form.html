@@ -5,7 +5,7 @@
     <title>Подбор программы</title>
   </head>
   <body class="page__body">
-    
+
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo logo" href="index.html">
@@ -25,10 +25,10 @@
                 <a href="index.html">главная</a>
               </li>
               <li class="site-list__item">
-                <a>каталог продукции</a>
+                <a href="catalog.html">каталог продукции</a>
               </li>
               <li class="site-list__item">
-                <a href="">подбор программы</a>
+                <a>подбор программы</a>
               </li>
             </ul>
           </div>
@@ -38,7 +38,74 @@
 
     <main class="main-container">
 
+      <h1 class="main-container__title">Подбор программы</h1>
 
+      <section class="meal">
+        <h2 class="meal__title">Заполните анкету, и мы подберем<br>
+          программу питания для вашего кота</h2>
+        <form class="meal__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="form__input-cat-info input-cat-info">
+            <legend class="visually-hidden">Анкета кошки</legend>
+            <ul class="input-cat-info__list">
+              <li class="input-cat-info__item">
+                <label for="name">ИМЯ:*</label>
+                <input type="text" id="name" placeholder="барсик">
+              </li>
+              <li class="input-cat-info__item">
+                <label for="weight">Вес (кг):*</label>
+                <input type="text" id="weight" placeholder="7">
+              </li>
+              <li class="input-cat-info__item">
+                <label for="age">ИМЯ:*</label>
+                <input type="text" id="age" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__input-change-weght">
+            <legend class="visually-hidden">Программа питания</legend>
+            <ul class="input-change-weght__list">
+              <li class="input-change-weght__item">
+                <input type="radio" id="program1" name="change-weght" value="похудение">
+                <label for="program1">похудение</label>
+              </li>
+              <li class="input-change-weght__item">
+                <input type="radio" id="program2" name="change-weght" value="Набор массы">
+                <label for="program2">Набор массы</label>
+              </li>
+              <li class="input-change-weght__item">
+                <input type="radio" id="program3" name="change-weght" value="Не знаю (Нужен ваш совет)">
+                <label for="program3">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="form__contact">
+            <label for="e-mail">E-mail:*</label>
+            <input type="email" id="e-mail" placeholder="kuklachev@gmail.com">
+            <label for="phone">E-mail:*</label>
+            <input type="tel" id="phone" placeholder="kuklachev@gmail.com">
+          </div>
+
+
+
+        </form>
+      </section>
+
+
+
+      <section class="contacts">
+        <div class="contacts__wrapper catalog-adress">
+            <h2 class="visually-hidden">Адрес</h2>
+            <p>приглашаем к сотрудничеству дилеров!</p>
+            <address>ул. Большая
+              Конюшенная, д. 19/8
+              Санкт-Петербург</address>
+        </div>
+      </section>
+
+      <section class="location">
+        <h2 class="visually-hidden">Карта</h2>
+        <img class="" src="img/index/location.jpg" width="320" height="362" alt="Местоположение">
+      </section>
     </main>
 
     <footer class="main-footer">
