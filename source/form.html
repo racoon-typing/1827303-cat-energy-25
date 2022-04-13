@@ -39,14 +39,16 @@
       <h1 class="main-container__title">Подбор программы</h1>
 
       <section class="meal">
-        <h2 class="meal__title">Заполните анкету, и мы подберем<br>
-          программу питания для вашего кота</h2>
+        <h2 class="visually-hidden">Анкета</h2>
+        <p class="meal__description">Заполните анкету, и мы подберем<br>
+          программу питания для вашего кота</p>
         <form class="meal__form form" action="https://echo.htmlacademy.ru/" method="post">
+
           <fieldset class="form__input-cat-info input-cat-info">
             <legend class="visually-hidden">Анкета кошки</legend>
             <ul class="input-cat-info__list">
               <li class="input-cat-info__item">
-                <label for="name-field">ИМЯ:*</label>
+                <label for="name-field">Имя:*</label>
                 <input type="text" id="name-field" name="name" placeholder="барсик">
               </li>
               <li class="input-cat-info__item">
@@ -59,8 +61,9 @@
               </li>
             </ul>
           </fieldset>
+
           <fieldset class="form__input-change-weght input-change-weght">
-            <legend class="visually-hidden">Программа питания</legend>
+            <legend class="visually-hidden">Цель программы</legend>
             <ul class="input-change-weght__list">
               <li class="input-change-weght__item">
                 <input type="radio" id="program1" name="change-weght" value="похудение">
@@ -76,20 +79,23 @@
               </li>
             </ul>
           </fieldset>
-          <div class="form__contact-user contact-user contact-user--necessary">
-            <h3 class="contact-user__title">Контактные данные<br>
-              (владельца кота)</h3>
+
+          <fieldset class="form__contact-user contact-user contact-user--necessary">
+            <legend class="contact-user__title">Контактные данные<br>
+              (владельца кота)</legend>
             <label for="e-mail-field">E-mail:*</label>
             <input type="email" id="e-mail-field" name="email" placeholder="kuklachev@gmail.com">
             <label for="phone-field">Телефон:*</label>
             <input type="tel" id="phone-field" name="phone" placeholder="8 (960) 900-60-90" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-          </div>
-          <div class="form__comment-user comment-user comment-user--necessary">
-            <h3 class="comment-user__title">Комментарий</h3>
+          </fieldset>
+
+          <fieldset class="form__comment-user comment-user comment-user--necessary">
+            <fieldset class="comment-user__title">Комментарий</fieldset>
             <textarea class="description" cols="30" rows="8">Расскажите обо всех повАдках кота</textarea>
-          </div>
-          <div class="form__add-user add-user add-user--necessary">
-            <h3 class="add-user__title">Дополнительно</h3>
+          </fieldset>
+
+          <fieldset class="form__add-user add-user add-user--necessary">
+            <fieldset class="add-user__title">Дополнительно</fieldset>
             <ul class="add-user__list">
               <li class="add-user__item">
                 <input type="checkbox" name="sweetener" id="sweetener-field" checked>
@@ -108,15 +114,14 @@
                 <label for="sweetener-field">витамины</label>
               </li>
             </ul>
-          </div>
-          <a class="form__link button" href="">отправить заявку</a>
+          </fieldset>
+
+          <button class="form__link button" type="button">отправить заявку</button>
+
         </form>
 
         <p>* — Обязательные поля</p>
-
       </section>
-
-
 
       <section class="contacts">
         <div class="contacts__wrapper catalog-adress">
