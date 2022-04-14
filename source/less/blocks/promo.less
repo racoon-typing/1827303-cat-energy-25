@@ -1,5 +1,16 @@
 .promo {
+  position: relative;
   width: 320px;
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.promo::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(/source/img/index/promo-product.png);
 }
 
 .promo__wrapper {
@@ -14,7 +25,6 @@
   line-height: 36px;
   text-align: center;
   color: #ffffff;
-  background-color: #68B738;
 }
 
 .promo__slogan {
@@ -24,7 +34,6 @@
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #68B738;
 }
 
 .promo__product {
