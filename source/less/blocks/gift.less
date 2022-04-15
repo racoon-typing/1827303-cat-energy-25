@@ -1,0 +1,36 @@
+.gift {
+  width: 320px;
+}
+
+.gift__wrapper {
+  position: relative;
+  width: 280px;
+  height: 200px;
+  margin: 0 auto;
+  background-image: url(../img/catalog/gift.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gift__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.gift__description {
+  position: absolute;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 1;
+}
+
