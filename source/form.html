@@ -79,24 +79,28 @@
 
     <section class="meal">
       <h2 class="visually-hidden">Анкета</h2>
-      <p class="meal__description">Заполните анкету, и мы подберем<br>
-        программу питания для вашего кота</p>
+
+      <div class="meal__wrapper-description">
+        <p class="meal__description">Заполните анкету, и мы подберем<br>
+          программу питания для вашего кота</p>
+      </div>
+
       <form class="meal__form form" action="https://echo.htmlacademy.ru/" method="post">
 
         <fieldset class="form__input-cat-info input-cat-info">
           <legend class="visually-hidden">Анкета кошки</legend>
           <ul class="input-cat-info__list">
-            <li class="input-cat-info__item">
-              <label for="name-field">Имя:*</label>
-              <input type="text" id="name-field" name="name" placeholder="барсик">
+            <li class="input-cat-info__item item-info-cat">
+              <label for="item-info-cat__field">Имя:*</label>
+              <input type="item-info-cat__text" id="name-field" name="name" placeholder="барсик">
             </li>
-            <li class="input-cat-info__item">
-              <label for="weight-field">Вес (кг):*</label>
-              <input type="text" id="weight-field" name="weight" placeholder="7">
+            <li class="input-cat-info__item item-info-cat">
+              <label for="item-info-cat__field">Вес (кг):*</label>
+              <input type="item-info-cat__text" id="weight-field" name="weight" placeholder="7">
             </li>
-            <li class="input-cat-info__item">
-              <label for="age-field">Возраст (лет):</label>
-              <input type="text" id="age-field" name="age" placeholder="7">
+            <li class="input-cat-info__item item-info-cat">
+              <label for="item-info-cat__field">Возраст (лет):</label>
+              <input type="item-info-cat__text" id="age-field" name="age" placeholder="7">
             </li>
           </ul>
         </fieldset>
