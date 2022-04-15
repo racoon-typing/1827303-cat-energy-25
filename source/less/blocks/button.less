@@ -1,16 +1,44 @@
 .button {
   display: flex;
+  text-transform: uppercase;
   box-sizing: border-box;
   flex-direction: row;
   align-items: center;
   width: 280px;
   height: 40px;
+  font-family: 'Oswald';
   color: #ffffff;
   background-color: #68B738;
-  justify-self: center;
+  justify-content: center;
   text-align: center;
+  text-decoration: none;
 
   &--promo {
-    padding: 8px 44px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &--purchase {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &--all {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+    background-color: #F2F2F2;
+  }
+
+  &--purchase-extra {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
