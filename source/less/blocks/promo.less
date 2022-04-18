@@ -6,7 +6,7 @@
 
 .promo__wrapper {
   width: 280px;
-  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .promo__image-wrapper {
@@ -58,22 +58,21 @@
 
 @media (min-width: @tablet-width) {
   .promo__wrapper {
-    width: 708px;
+    padding: 0 30px;
   }
 
   .promo__image-wrapper {
     display: none;
   }
 
-  .promo__product {
-    width: 708px;
-    min-height: 609px;
+  .promo__wrapper {
+    position: relative;
   }
 
   .promo__link {
     position: absolute;
-    top: 370px;
-    left: 120px;
+    top: 29px;
+    left: 91px;
   }
 }
 
@@ -84,7 +83,7 @@
 
   .promo__image-wrapper {
     display: block;
-    width: 720px;
-    min-height: 694px;
+    max-width: 720px;
+    height: 694px;
   }
 }
