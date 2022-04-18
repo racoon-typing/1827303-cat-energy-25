@@ -1,5 +1,7 @@
 .contacts {
   width: 320px;
+  display: flex;
+  flex-direction: column;
   background-color: @white;
 
   &--catalog {
@@ -13,7 +15,7 @@
 
 .contacts__wrapper {
   width: 280px;
-  margin: 0 auto;
+  margin: 0 20px;
 }
 
 .contacts__offer {
@@ -31,4 +33,39 @@
   font-size: 14px;
   line-height: 20px;
   color: @special-dark-grey;
+}
+
+.contacts__location {
+  position: relative;
+  width: 320px;
+}
+
+.contacts__location::after {
+  content: url("../img/index/map-pin.png");
+  position: absolute;
+  top: 139px;
+  left: 134px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__wrapper {
+    padding: 56px 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @dekstop-width) {
+  .contacts {
+    max-width: 1220px;
+    position: relative;
+  }
+
+  .contacts__wrapper {
+    position: absolute;
+    width: 405px;
+    padding: 56px 80px;
+    top: 95px;
+    left: 110px;
+  }
 }
