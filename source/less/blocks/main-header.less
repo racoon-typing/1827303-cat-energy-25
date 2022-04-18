@@ -1,11 +1,13 @@
 .main-header {
   width: 320px;
+  display: flex;
+  justify-content: space-between;
   background-color: @white;
 }
 
 .main-header__wrapper {
   width: 280px;
-  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .main-header__toggle {
@@ -16,4 +18,21 @@
   background-repeat: no-repeat;
   border: none;
   background-color: transparent;
+}
+
+.main-header__logo {
+  height: 38px;
+}
+
+.main-header__logo-name {
+  height: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    padding: 30px;
+  }
+  .main-header__toggle {
+    display: none;
+  }
 }
