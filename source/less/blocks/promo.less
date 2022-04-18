@@ -1,5 +1,7 @@
 .promo {
   width: 320px;
+  display: flex;
+  flex-direction: column;
 }
 
 .promo__wrapper {
@@ -8,6 +10,7 @@
 }
 
 .promo__image-wrapper {
+  height: 302px;
   min-height: auto;
   position: relative;
   background-image: url("../img/index/background-promo.png");
@@ -51,4 +54,37 @@
 
 .promo__product {
   object-fit: contain;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__wrapper {
+    width: 708px;
+  }
+
+  .promo__image-wrapper {
+    display: none;
+  }
+
+  .promo__product {
+    width: 708px;
+    height: 609px;
+  }
+
+  .promo__link {
+    position: absolute;
+    top: 370px;
+    left: 120px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    display: flex;
+  }
+
+  .promo__image-wrapper {
+    display: block;
+    width: 720px;
+    height: 694px;
+  }
 }

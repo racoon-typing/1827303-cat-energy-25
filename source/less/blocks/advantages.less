@@ -22,3 +22,30 @@
   margin: 0;
   list-style-type: none;
 }
+
+.advantages__item {
+  width: 279px;
+  box-sizing: border-box;
+  padding-left: 80px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    row-gap: 129px;
+    column-gap: 37px;
+  }
+
+  .advantages__item {
+    height: 280px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    row-gap: 75px;
+  }
+}

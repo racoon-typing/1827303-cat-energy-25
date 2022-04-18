@@ -1,12 +1,14 @@
 .statistics {
   width: 320px;
+  display: flex;
+  flex-direction: column;
   color: @black;
   background-color: @light-grey;
 }
 
 .statistics__wrapper {
   width: 280px;
-  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .statistics__title {
@@ -27,4 +29,21 @@
   line-height: 18px;
   color: @special-dark-grey;
   background-color: @light-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .statistics__wrapper {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  .content-photo {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .statistics {
+    flex-direction: row;
+  }
 }
