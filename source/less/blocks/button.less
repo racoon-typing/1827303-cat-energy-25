@@ -7,7 +7,11 @@
   width: 280px;
   min-height: 40px;
   padding: 0;
-  font-family: @oswald;
+  font-family: @main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
   color: @white;
   background-color: @green;
   justify-content: center;
@@ -15,36 +19,19 @@
   text-decoration: none;
   border: none;
 
-  &--promo {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+  &--main {
+    font-size: 16px;
+    line-height: 20px;
   }
 
-  &--purchase {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-  }
-
-  &--all {
-    font-style: normal;
-    font-weight: 400;
+  &--disabled {
     font-size: 16px;
     line-height: 20px;
     color: @darl-grey;
     background-color: @light-grey;
   }
 
-  &--purchase-extra {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  &--change {
+  &--transparent {
     width: 50px;
     min-height: 30px;
     background-color: transparent;
@@ -57,12 +44,5 @@
     text-align: center;
     text-transform: uppercase;
     color: @black;
-  }
-
-  &--send {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
   }
 }
