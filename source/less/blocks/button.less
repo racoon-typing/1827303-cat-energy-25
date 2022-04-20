@@ -1,0 +1,48 @@
+.button {
+  display: flex;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  width: 280px;
+  height: 40px;
+  padding: 0;
+  font-family: @main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: @color-main;
+  background-color: @color-accent;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+
+  &--main {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &--disabled {
+    font-size: 16px;
+    line-height: 20px;
+    color: @color-second;
+    background-color: @color-emphasize;
+  }
+
+  &--transparent {
+    width: 50px;
+    height: 30px;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: @color-text-main;
+  }
+}
