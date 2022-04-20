@@ -6,6 +6,7 @@
   width: 280px;
   padding: 0 20px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -29,6 +30,7 @@
 
 @media (min-width: @tablet-width) {
   .main-header__wrapper {
+    flex-direction: row;
     padding: 0 30px;
   }
 
@@ -42,7 +44,6 @@
     width: 440px;
     justify-content: space-between;
   }
-
 }
 
 @media (min-width: @desktop-width) {
