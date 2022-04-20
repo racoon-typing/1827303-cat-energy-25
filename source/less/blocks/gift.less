@@ -1,8 +1,8 @@
-.gift {
+.offer {
   width: 320px;
 }
 
-.gift__wrapper {
+.offer__wrapper {
   position: relative;
   width: 280px;
   height: 200px;
@@ -12,17 +12,17 @@
   background-repeat: no-repeat;
 }
 
-.gift__wrapper::after {
+.offer__wrapper::after {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: @light-green;
+  background-color: @color-bg;
 }
 
-.gift__description {
+.offer__description {
   position: absolute;
   font-family: @second-font;
   font-style: normal;
@@ -30,6 +30,6 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: @white;
+  color: @color-main;
   z-index: 1;
 }
