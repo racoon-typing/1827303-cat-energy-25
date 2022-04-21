@@ -1,10 +1,13 @@
 .promo {
-  width: 320px;
   display: flex;
   flex-direction: column;
 }
 
 .promo__wrapper {
+  width: auto;
+}
+
+.promo__wrapper-title {
   min-height: 302px;
   position: relative;
   background-image: url("../img/index/background-promo.png");
@@ -13,7 +16,7 @@
   z-index: 0;
 }
 
-.promo__wrapper::after {
+.promo__wrapper-title::after {
   position: absolute;
   content: "";
   background-color: @color-bg;
@@ -25,12 +28,12 @@
 }
 
 .promo__wrapper-product {
-  width: 280px;
   padding: 0 20px;
 }
 
 .promo__title {
   position: relative;
+  margin: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -42,6 +45,7 @@
 
 .promo__slogan {
   position: relative;
+  margin: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -56,12 +60,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .promo__wrapper {
-    min-height: auto;
+  .promo__wrapper-title {
     background-image: none;
+    min-height: auto;
+    padding: 0 117px;
   }
 
-  .promo__wrapper::after {
+  .promo__wrapper-title::after {
     display: none;
   }
 
@@ -93,19 +98,50 @@
 }
 
 @media (min-width: @desktop-width) {
-  .promo {
+  .promo__wrapper {
+    max-width: 1330px;
+    padding-left: 110px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
   }
 
-  .promo__wrapper {
-    width: 100%;
-    max-width: 1330px;
+  .promo__wrapper-title {
+    padding: 0 80px;
   }
 
-  .promo__image-wrapper {
-    display: block;
-    max-width: 720px;
-    height: 694px;
+  .promo__wrapper-product {
+    min-width: 720px;
+    min-height: 694px;
+    background-image: url("../img/index/background-promo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+
+  .promo__wrapper-product::after {
+    position: absolute;
+    content: "";
+    background-color: @color-bg;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .promo__product {
+    position: absolute;
+    width: 552px;
+    height: 499px;
+    top: 141px;
+    left: -162px;
+    z-index: 2;
+  }
+
+  .promo__link {
+    position: absolute;
+    top: 455px;
+    left: -530px;
   }
 }

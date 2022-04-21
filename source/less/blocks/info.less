@@ -1,15 +1,13 @@
 .info {
-  width: 320px;
+  background-color: @color-main;
 }
 
 .info__wrapper {
-  width: 280px;
+  width: auto;
   padding: 0 20px;
 }
 
 .info__list {
-  display: flex;
-  flex-direction: column;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -17,9 +15,12 @@
 
 .info__item {
   min-height: 266px;
-  margin-bottom: 20px;
   color: @color-text-main;
   background-color: @color-second;
+}
+
+.info__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .info__title {
@@ -66,14 +67,25 @@
 }
 
 @media (min-width: @desktop-width) {
-  .info__list {
+  .info__wrapper {
     max-width: 1220px;
-    flex-direction: row;
+    padding: 0 110px;
     margin: 0 auto;
   }
 
+  .info__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .info__item {
-    width: 570px;
+    max-width: 570px;
     min-height: 374px;
+  }
+
+  .info__item:not(:last-child) {
+    margin-right: 80px;
+    margin-bottom: 0;
   }
 }

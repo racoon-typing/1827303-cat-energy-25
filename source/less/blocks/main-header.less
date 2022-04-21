@@ -3,11 +3,10 @@
 }
 
 .main-header__wrapper {
-  width: 280px;
+  width: auto;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .main-header__toggle {
@@ -31,6 +30,7 @@
 @media (min-width: @tablet-width) {
   .main-header__wrapper {
     flex-direction: row;
+    justify-content: space-between;
     padding: 0 30px;
   }
 
@@ -49,6 +49,7 @@
 @media (min-width: @desktop-width) {
   .main-header__wrapper {
     max-width: 1220px;
+    padding: 0 110px;
     margin: 0 auto;
   }
 
