@@ -1,10 +1,9 @@
 .promo {
-  display: flex;
-  flex-direction: column;
+  background-color: @color-main;
 }
 
 .promo__wrapper {
-  width: auto;
+  width: 320px;
 }
 
 .promo__wrapper-title {
@@ -60,6 +59,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .promo__wrapper {
+    width: 768px;
+  }
+
   .promo__wrapper-title {
     background-image: none;
     min-height: auto;
@@ -99,7 +102,7 @@
 
 @media (min-width: @desktop-width) {
   .promo__wrapper {
-    max-width: 1330px;
+    width: 1330px;
     padding-left: 110px;
     margin: 0 auto;
     display: flex;
@@ -107,12 +110,14 @@
   }
 
   .promo__wrapper-title {
+    width: 610px;
+    box-sizing: border-box;
     padding: 0 80px;
   }
 
   .promo__wrapper-product {
-    min-width: 720px;
-    min-height: 694px;
+    width: 720px;
+    height: 694px;
     background-image: url("../img/index/background-promo.png");
     background-position: center;
     background-repeat: no-repeat;

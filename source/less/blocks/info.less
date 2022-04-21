@@ -3,7 +3,7 @@
 }
 
 .info__wrapper {
-  width: auto;
+  width: 280px;
   padding: 0 20px;
 }
 
@@ -58,6 +58,7 @@
 
 @media (min-width: @tablet-width) {
   .info__wrapper {
+    width: 708px;
     padding: 0 30px;
   }
 
@@ -68,7 +69,7 @@
 
 @media (min-width: @desktop-width) {
   .info__wrapper {
-    max-width: 1220px;
+    width: 1220px;
     padding: 0 110px;
     margin: 0 auto;
   }
@@ -80,12 +81,11 @@
   }
 
   .info__item {
-    max-width: 570px;
+    width: 570px;
     min-height: 374px;
   }
 
   .info__item:not(:last-child) {
-    margin-right: 80px;
     margin-bottom: 0;
   }
 }
