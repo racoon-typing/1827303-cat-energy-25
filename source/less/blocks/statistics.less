@@ -53,13 +53,27 @@
   }
 
   .statistics__wrapper {
-    display: flex;
-    justify-content: space-between;
     width: 1220px;
     padding: 0 110px;
   }
 
+  .statistics__wrapper-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .statistics__info-wrapper {
+    position: relative;
     width: 436px;
+    z-index: 1;
+  }
+
+  .statistics__content {
+    width: 591px;
+    height: 576px;
+  }
+
+  .statistics__wrapper::after {
+    top: 133px;
   }
 }
