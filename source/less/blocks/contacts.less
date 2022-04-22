@@ -1,6 +1,4 @@
 .contacts {
-  display: flex;
-  flex-direction: column;
   background-color: @color-main;
 
   &--dark {
@@ -9,8 +7,14 @@
 }
 
 .contacts__wrapper {
+  width: 320px;
+}
+
+.contacts__adress-wrapper {
   width: 280px;
-  margin: 0 20px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacts__offer {
@@ -32,7 +36,6 @@
 
 .contacts__location {
   position: relative;
-  width: 320px;
 }
 
 .contacts__location::after {
@@ -44,22 +47,29 @@
 
 @media (min-width: @tablet-width) {
   .contacts__wrapper {
-    padding: 56px 70px;
-    display: flex;
-    justify-content: space-between;
+    width: 768px;
+  }
+
+  .contacts__adress-wrapper {
+    width: 628px;
+    padding: 0 70px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .contacts {
-    max-width: 1220px;
+  .contacts__wrapper {
+    width: 1440px;
+    height: 400px;
+    margin: 0 auto;
     position: relative;
   }
 
-  .contacts__wrapper {
+  .contacts__adress-wrapper {
     position: absolute;
     width: 405px;
-    padding: 56px 80px;
+    padding: 0 80px;
+    background-color: @color-main;
+    z-index: 1;
     top: 95px;
     left: 110px;
   }
