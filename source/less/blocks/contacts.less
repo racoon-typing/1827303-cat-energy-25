@@ -35,6 +35,7 @@
 }
 
 .contacts__location {
+  width: 320px;
   position: relative;
 }
 
@@ -54,6 +55,24 @@
     width: 628px;
     padding: 0 70px;
   }
+
+  .contacts__location {
+    width: 768px;
+    height: 400px;
+    background-image: url(../../img/index/map-tablet.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .contacts__location::after {
+    content: url("../../img/index/svg/map-pin-big.svg");
+    top: 146px;
+    left: 333px;
+  }
+
+  .contacts__map {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -72,5 +91,9 @@
     z-index: 1;
     top: 95px;
     left: 110px;
+  }
+
+  .contacts__map {
+    display: none;
   }
 }
