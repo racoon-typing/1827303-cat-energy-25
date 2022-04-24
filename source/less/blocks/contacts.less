@@ -86,11 +86,24 @@
   .contacts__adress-wrapper {
     position: absolute;
     width: 405px;
-    padding: 0 80px;
+    padding: 56px 80px;
     background-color: @color-main;
     z-index: 1;
     top: 95px;
     left: 110px;
+  }
+
+  .contacts__location {
+    width: 1440px;
+    height: 400px;
+    background-image: url(../../img/index/map-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .contacts__location::after {
+    top: 131px;
+    left: 908px;
   }
 
   .contacts__map {
