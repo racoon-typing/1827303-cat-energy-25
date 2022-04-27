@@ -5,11 +5,6 @@
   padding: 0;
 }
 
-.add-user__wrapper {
-  width: 280px;
-  margin: 0 auto;
-}
-
 .add-user__title {
   font-style: normal;
   font-weight: 400;
@@ -22,4 +17,30 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+@media (min-width: @tablet-width) {
+  .add-user__wrapper {
+    width: 565px;
+  }
+
+  .add-user__list {
+    display: grid;
+    grid-template-columns: 282px 282px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .add-user__wrapper {
+    width: 1220px;
+  }
+
+  .add-user__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .add-user__item {
+    width: 221px;
+  }
 }

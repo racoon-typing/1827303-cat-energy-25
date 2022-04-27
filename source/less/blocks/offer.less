@@ -1,18 +1,18 @@
 .offer {
-  width: 320px;
+  background-color: @color-main;
 }
 
 .offer__wrapper {
   position: relative;
   width: 280px;
-  min-height: 200px;
-  margin: 0 auto;
+  padding: 0 20px;
+  height: 200px;
   background-image: url("../img/catalog/gift.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.offer__wrapper::after {
+.offer__wrapper-bg::after {
   content: "";
   position: absolute;
   top: 0;
@@ -32,4 +32,20 @@
   text-align: center;
   color: @color-main;
   z-index: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .offer__wrapper {
+    width: 708px;
+    min-height: 200px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .offer__wrapper {
+    width: 246px;
+    min-height: 289px;
+    padding: 0;
+  }
 }

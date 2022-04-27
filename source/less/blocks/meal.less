@@ -1,11 +1,10 @@
 .meal {
   font-family: @main-font;
-  width: 320px;
 }
 
 .meal__wrapper-description {
   width: 280px;
-  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .meal__description {
@@ -13,4 +12,20 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+}
+
+.meal__form {
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .meal__form {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .meal__form {
+    width: 1440px;
+  }
 }
