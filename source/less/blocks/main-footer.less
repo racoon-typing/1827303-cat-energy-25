@@ -1,5 +1,4 @@
 .main-footer {
-  width: 320px;
   color: @color-text-main;
   background-color: @color-second;
 }
@@ -7,6 +6,12 @@
 .main-footer__wrapper {
   width: 280px;
   padding: 0 20px;
+  margin: 0 auto;
+}
+
+.main-footer__logo-academy {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-footer__logo-academy-name {
@@ -16,5 +21,21 @@
   font-size: 16px;
   line-height: 18px;
   color: @color-text-second;
-  background-color: @color-second;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    width: 708px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer__wrapper {
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
 }

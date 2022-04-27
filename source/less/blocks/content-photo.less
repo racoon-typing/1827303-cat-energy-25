@@ -3,3 +3,34 @@
   margin: 0;
   list-style-type: none;
 }
+
+@media (min-width: @tablet-width) {
+  .content-photo {
+    position: relative;
+    z-index: 1;
+  }
+
+  .content-photo__list {
+    display: flex;
+  }
+
+  .content-photo__item {
+    position: relative;
+    width: 296px;
+    height: 511px;
+  }
+
+  .content-photo__item--before {
+    background-image: url("../img/index/slider-cat-fat.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .content-photo__item--after {
+    background-image: url("../img/index/slider-cat-skinny.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+}
