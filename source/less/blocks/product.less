@@ -2,6 +2,14 @@
   display: flex;
   width: 280px;
   padding: 0 20px;
+
+  &--more {
+    flex-direction: column;
+  }
+}
+
+.product__link {
+  margin: 0 auto;
 }
 
 .product__photo {
@@ -21,6 +29,11 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @color-text-second;
+}
+
+.product__stats-item {
+  display: flex;
+  justify-content: space-between;
 }
 
 .product__description {
