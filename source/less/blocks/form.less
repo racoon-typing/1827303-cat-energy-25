@@ -5,6 +5,14 @@
   border: none;
 }
 
+.form__feildset-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: @color-text-main;
+}
+
 .form__list {
   padding: 0;
   margin: 0;
@@ -34,10 +42,15 @@
   .form__input {
     width: 630px;
     padding: 0;
+  }
 
-    &--add-user {
-      width: 565px;
-    }
+  .form__list-wrapper {
+    width: 565px;
+  }
+
+  .form__list--add {
+    display: grid;
+    grid-template-columns: 282px 282px;
   }
 
   .form__link-wrapper {
@@ -52,5 +65,23 @@
   .form__input {
     width: 1220px;
     padding: 0 110px;
+  }
+
+  .form__list-wrapper {
+    width: 1220px;
+  }
+
+  .form__list--add {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item-info--add {
+    width: 221px;
+  }
+
+  .form__link-wrapper {
+    width: 829px;
+    padding-left: 110px;
   }
 }
