@@ -7,12 +7,12 @@
   width: 280px;
   margin: 0 auto;
   height: 290px;
-  background-image: url("../img/catalog/gift.png");
+  background-image: url("../img/catalog/offer.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.offer__wrapper-bg::after {
+.offer__wrapper::after {
   content: "";
   position: absolute;
   top: 0;
@@ -37,15 +37,17 @@
 @media (min-width: @tablet-width) {
   .offer__wrapper {
     width: 708px;
-    min-height: 200px;
-    padding: 0 30px;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url("../img/catalog/bg-offer-tablet.png");
   }
 }
 
 @media (min-width: @desktop-width) {
   .offer__wrapper {
-    width: 246px;
-    min-height: 289px;
+    width: 245px;
+    height: 289px;
     padding: 0;
+    background-image: url("../img/catalog/bg-offer-desktop.png");
   }
 }
