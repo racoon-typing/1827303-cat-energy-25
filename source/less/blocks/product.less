@@ -34,6 +34,10 @@
 .product__stats-item {
   display: flex;
   justify-content: space-between;
+
+  &--extra {
+    width: 225px;
+  }
 }
 
 .product__description {
@@ -66,14 +70,24 @@
   .product__wrapper {
     position: relative;
     display: block;
-    width: 252px;
-    padding: 0 36px;
+    width: 250px;
+    padding: 0 37px;
     z-index: 1;
   }
 
   .product__link {
     position: relative;
     z-index: 1;
+  }
+
+  .product__wrapper-text {
+    width: 250px;
+  }
+
+  .product__wrapper-content-extra {
+    width: 632px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
