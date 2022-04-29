@@ -96,15 +96,15 @@
           <ul class="form__list input-list">
             <li class="input-list__item item-info">
               <label for="name-field">Имя:*</label>
-              <input class="item-info__text" type="text" id="name-field" name="name" placeholder="барсик">
+              <input class="item-info__input" type="text" id="name-field" name="name" placeholder="барсик">
             </li>
             <li class="input-list__item item-info">
               <label for="weight-field">Вес (кг):*</label>
-              <input class="item-info__text" type="text" id="weight-field" name="weight" placeholder="7">
+              <input class="item-info__input" type="text" id="weight-field" name="weight" placeholder="7">
             </li>
             <li class="input-list__item item-info">
               <label for="age-field">Возраст (лет):</label>
-              <input class="item-info__text" type="text" id="age-field" name="age" placeholder="7">
+              <input class="item-info__input" type="text" id="age-field" name="age" placeholder="7">
             </li>
           </ul>
         </fieldset>
@@ -112,17 +112,17 @@
         <fieldset class="form__input form__input--change-weght">
           <legend class="visually-hidden">Цель программы</legend>
           <ul class="form__list input-list">
-            <li class="input-list__item item-purpose">
-              <input class="item-purpose__radio" type="radio" id="program1" name="change-weght" value="похудение">
-              <label class="item-purpose__ladel" for="program1">похудение</label>
+            <li class="input-list__item item-info">
+              <input class="item-info__radio" type="radio" id="program1" name="change-weght" value="похудение">
+              <label class="item-info__ladel" for="program1">похудение</label>
             </li>
-            <li class="input-list__item item-purpose">
-              <input class="item-purpose__radio" type="radio" id="program2" name="change-weght" value="Набор массы">
-              <label class="item-purpose__ladel" for="program2">Набор массы</label>
+            <li class="input-list__item item-info">
+              <input class="item-info__radio" type="radio" id="program2" name="change-weght" value="Набор массы">
+              <label class="item-info__ladel" for="program2">Набор массы</label>
             </li>
-            <li class="input-list__item item-purpose">
-              <input class="item-purpose__radio" type="radio" id="program3" name="change-weght" value="Не знаю (Нужен ваш совет)">
-              <label class="item-purpose__ladel" for="program3">Не знаю (Нужен ваш совет)</label>
+            <li class="input-list__item item-info">
+              <input class="item-info__radio" type="radio" id="program3" name="change-weght" value="Не знаю (Нужен ваш совет)">
+              <label class="item-info__ladel" for="program3">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
@@ -130,15 +130,17 @@
         <fieldset class="form__input form__input--contact-user contact-user contact-user--necessary">
           <legend class="contact-user__title title title--large">Контактные данные<br>
             (владельца кота)</legend>
-          <div class="contact-user__wrapper info-user">
-            <label class="info-user__field" for="e-mail-field">E-mail:*</label>
-            <input class="info-user__field" type="email" id="e-mail-field" name="email" placeholder="kuklachev@gmail.com">
-          </div>
-          <div class="contact-user__wrapper info-user">
-            <label class="info-user__field" for="phone-field">Телефон:*</label>
-            <input class="info-user__field" type="tel" id="phone-field" name="phone" placeholder="8 (960) 900-60-90"
-              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-          </div>
+          <ul class="form__list input-list">
+            <li class="input-list__item item-info">
+              <label class="info-user__field" for="e-mail-field">E-mail:*</label>
+              <input class="info-user__input" type="email" id="e-mail-field" name="email" placeholder="kuklachev@gmail.com">
+            </li>
+            <li class="input-list__item item-info">
+              <label class="info-user__field" for="phone-field">Телефон:*</label>
+              <input class="info-user__input" type="tel" id="phone-field" name="phone" placeholder="8 (960) 900-60-90"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="form__input form__input--comment-user comment-user comment-user--necessary">
