@@ -13,21 +13,29 @@
 
 .main-nav__toggle {
   position: relative;
-  width: 24px;
-  height: 24px;
-  padding: 0;
-  margin: 0;
-  // top: 13px;
-  background-image: url("../img/index/svg/header-toggle.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  display: block;
+  cursor: pointer;
   border: none;
-  background-color: transparent;
+  width: 24px;
+  height: 18px;
+  padding: 0;
+  background-color: @color-main;
 }
 
 @media (max-width: @mobile-width-only) {
   .main-nav--closed .site-list__item {
     display: none;
+  }
+
+  .main-nav--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: @color-text-main;
+    top: 0;
+    left: 0;
+    box-shadow: 0 8px 0 0 @color-text-main, 0 16px 0 0 @color-text-main;
   }
 
   .main-nav--opened .site-list__item {
@@ -43,15 +51,13 @@
   }
 
   .main-nav--opened .main-nav__toggle {
-    background-image: none;
-
     &::after,
     &::before {
       content: "";
-      top: 0;
       left: 0;
+      top: 8px;
       position: absolute;
-      width: 26px;
+      width: 24px;
       height: 2px;
       background-color: @color-text-main;
     }
