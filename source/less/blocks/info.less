@@ -15,6 +15,7 @@
 }
 
 .info__item {
+  position: relative;
   min-height: 266px;
   width: 280px;
   box-sizing: border-box;
@@ -24,6 +25,46 @@
   margin-bottom: 20px;
   color: @color-text-main;
   background-color: @color-second;
+  background-repeat: no-repeat;
+}
+
+.info__item::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: @color-accent;
+}
+
+.info__item:nth-child(1)::before {
+  left: 22px;
+  top: 29px;
+}
+
+.info__item:nth-child(1)::after {
+  content: url("../../img/index/svg/cat-thin.svg");
+  position: absolute;
+  width: 36px;
+  height: 50px;
+  left: 29px;
+  top: 26px;
+  z-index: 2;
+}
+
+.info__item:nth-child(2)::before {
+  left: 22px;
+  top: 24px;
+}
+
+.info__item:nth-child(2)::after {
+  content: url("../../img/index/svg/tiger.svg");
+  position: absolute;
+  width: 67px;
+  height: 28px;
+  left: 13px;
+  top: 35px;
+  z-index: 2;
 }
 
 .info__title {
