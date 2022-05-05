@@ -1,14 +1,39 @@
+.infographic__wrapper {
+  position: relative;
+  width: 124px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
 .infographic__indicator {
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 18px;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  color: @color-text-main;
 }
 
 .infographic__indicator-description {
+  position: absolute;
+  top: 46px;
+  display: block;
+  width: 87px;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: @second-font;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 100%;
+  line-height: 1;
+  text-align: center;
+  color: @color-text-second;
+  background-color: @color-emphasize;
 }
