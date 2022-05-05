@@ -28,8 +28,56 @@
 }
 
 .advantages__item {
+  position: relative;
   padding-left: 80px;
   margin-bottom: 20px;
+}
+
+.advantages__item::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: @color-accent;
+  top: 0;
+  left: 0;
+}
+
+.advantages__item::after {
+  content: "";
+  position: absolute;
+}
+
+.advantages__item:nth-child(1)::after {
+  width: 30px;
+  height: 32px;
+  top: 14px;
+  left: 15px;
+  content: url("../../img/index/svg/icon-leaf.svg");
+}
+
+.advantages__item:nth-child(2)::after {
+  width: 30px;
+  height: 32px;
+  top: 13px;
+  left: 15px;
+  content: url("../../img/index/svg/icon-tub.svg");
+}
+
+.advantages__item:nth-child(3)::after {
+  width: 30px;
+  height: 32px;
+  top: 15px;
+  left: 18px;
+  content: url("../../img/index/svg/icon_eat.svg");
+}
+
+.advantages__item:nth-child(4)::after {
+  width: 30px;
+  height: 32px;
+  top: 13px;
+  left: 14px;
+  content: url("../../img/index/svg/icon_alarm.svg");
 }
 
 @media (min-width: @tablet-width) {
