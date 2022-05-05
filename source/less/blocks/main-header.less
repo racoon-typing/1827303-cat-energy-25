@@ -38,11 +38,22 @@
 @media (min-width: @tablet-width) {
   .main-header__wrapper {
     width: 708px;
-    box-sizing: border-box;
-    flex-direction: row;
     justify-content: space-between;
     padding: 0 30px;
   }
+
+  .main-header__wrapper-full {
+    width: 708px;
+    min-height: 54px;
+    padding-top: 24px;
+    padding-bottom: 62px;
+  }
+
+  .main-header__wrapper-small {
+    width: 174px;
+    align-self: center;
+  }
+
 
   .main-header__nav {
     display: flex;
