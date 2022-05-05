@@ -28,25 +28,18 @@
   .products__list {
     display: grid;
     grid-template-columns: 324px 324px;
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 142px;
   }
 
   .products__item {
     position: relative;
-    min-height: 511px;
-  }
-
-  .products__item:last-child::before {
-    display: none;
-  }
-
-  .products__item::before {
-    position: absolute;
-    content: "";
-    background-color: @color-second;
-    width: 324px;
     min-height: 430px;
-    top: 81px;
+    background-color: @color-second;
+  }
+
+  .products__item:last-child {
+    background-color: @color-main;
   }
 }
 
