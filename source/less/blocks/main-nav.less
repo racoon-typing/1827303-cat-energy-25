@@ -145,5 +145,27 @@
 
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
+    width: 440px;
+    justify-content: space-between;
+  }
+
+  .main-nav__link {
+    position: relative;
+    display: block;
+    padding-bottom: 12px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .main-nav__link--current::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: @color-accent;
+    bottom: 2px;
+    right: 0;
+    left: 0;
   }
 }
