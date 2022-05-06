@@ -17,6 +17,22 @@
 
 .products__item {
   min-height: 190px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px 15px;
+
+  &--more {
+    min-height: 158px;
+    padding-top: 53px;
+    padding-bottom: 0;
+  }
+}
+
+.products__item:last-child .product__title,
+.products__item:last-child .product__description {
+  display: inline;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {
