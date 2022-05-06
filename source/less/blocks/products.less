@@ -26,6 +26,7 @@
     min-height: 158px;
     padding-top: 53px;
     padding-bottom: 0;
+    flex-direction: column;
   }
 }
 
@@ -50,8 +51,13 @@
 
   .products__item {
     position: relative;
+    flex-direction: column;
+    flex-wrap: nowrap;
     min-height: 430px;
+    padding: 0 36px 39px;
+    margin-top: 81px;
     background-color: @color-second;
+    justify-content: flex-end;
   }
 
   .products__item:last-child {
