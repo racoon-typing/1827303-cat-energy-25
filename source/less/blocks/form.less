@@ -3,6 +3,12 @@
   padding: 0 20px;
   margin: 0;
   border: none;
+
+  &--contact-user,
+  &--comment-user,
+  &--add-user {
+    border-top: 2px solid #68b738;
+  }
 }
 
 .form__feildset-title {
@@ -27,6 +33,7 @@
 
 .form__link {
   width: 280px;
+  min-height: 40px;
 }
 
 .form__text-info {
@@ -61,7 +68,7 @@
     padding: 0;
   }
 
-  .form__list {
+  .form__list-wrapper {
     width: 565px;
   }
 
@@ -75,6 +82,10 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
+  }
+
+  .form__link-wrapper {
+    min-height: 52px;
   }
 
   .form__item {
@@ -103,7 +114,7 @@
     }
   }
 
-  .form__list {
+  .form__list-wrapper {
     width: 1220px;
   }
 
@@ -120,7 +131,10 @@
 
   .form__link-wrapper {
     width: 829px;
-    padding: 0 110px;
+  }
+
+  .form__link {
+    width: 568px;
   }
 
   .form__item {
