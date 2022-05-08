@@ -1,3 +1,41 @@
+.form__input {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0;
+  border: none;
+
+  &--contact-user,
+  &--comment-user,
+  &--add-user {
+    border-top: 2px solid #68b738;
+  }
+}
+
+.form__feildset-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: @color-text-main;
+  margin-bottom: 35px;
+}
+
+.form__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.form__link-wrapper {
+  width: 280px;
+  padding: 0 20px;
+}
+
+.form__link {
+  width: 280px;
+  min-height: 40px;
+}
+
 .form__text-info {
   font-family: @second-font;
   font-style: normal;
@@ -6,4 +44,100 @@
   line-height: 16px;
   text-align: center;
   color: @color-text-main;
+}
+
+.form__item {
+  width: 280px;
+  height: 150px;
+}
+
+.form__item-description {
+  padding: 10px 15px;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @color-text-second;
+}
+
+@media (min-width: @tablet-width) {
+  .form__input {
+    width: 630px;
+    padding: 0;
+  }
+
+  .form__list-wrapper {
+    width: 565px;
+  }
+
+  .form__list--add {
+    display: grid;
+    grid-template-columns: 282px 282px;
+  }
+
+  .form__link-wrapper {
+    width: 565px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__link {
+    min-height: 52px;
+  }
+
+  .form__item {
+    width: 630px;
+    height: 174px;
+  }
+
+  .form__item-description {
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__feildset-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 568px);
+    gap: 80px;
+  }
+
+  .form__input {
+    width: 1220px;
+
+    &--cat-info,
+    &--change-weght {
+      width: 568px;
+    }
+  }
+
+  .form__list-wrapper {
+    width: 1220px;
+  }
+
+  .form__list--add {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__list--info-user {
+    display: grid;
+    grid-template-columns: repeat(2, 568px);
+    gap: 80px;
+  }
+
+  .form__link-wrapper {
+    width: 829px;
+  }
+
+  .form__link {
+    width: 568px;
+  }
+
+  .form__item {
+    width: 1220px;
+  }
 }

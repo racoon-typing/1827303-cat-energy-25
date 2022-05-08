@@ -1,13 +1,13 @@
 .offer {
-  width: 320px;
+  background-color: @color-main;
 }
 
 .offer__wrapper {
   position: relative;
   width: 280px;
-  min-height: 200px;
   margin: 0 auto;
-  background-image: url("../img/catalog/gift.png");
+  height: 290px;
+  background-image: url("../img/catalog/offer.png");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -32,4 +32,22 @@
   text-align: center;
   color: @color-main;
   z-index: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .offer__wrapper {
+    width: 708px;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url("../img/catalog/bg-offer-tablet.png");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .offer__wrapper {
+    width: 245px;
+    height: 289px;
+    padding: 0;
+    background-image: url("../img/catalog/bg-offer-desktop.png");
+  }
 }

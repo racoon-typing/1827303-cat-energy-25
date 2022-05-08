@@ -1,10 +1,13 @@
 .main-container {
+  position: relative;
   background-color: @color-main;
   color: @color-text-main;
 }
 
 .main-container__title-wrapper {
+  width: 280px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 .main-container__title {
@@ -13,4 +16,31 @@
   font-size: 36px;
   line-height: 36px;
   color: @color-text-main;
+}
+
+@media (min-width: @tablet-width) {
+  .main-container__title-wrapper {
+    width: 708px;
+    padding: 0 30px;
+
+    &--form {
+      width: 630px;
+      padding: 0 70px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-container__title-wrapper {
+    width: @desktop-content-width;
+  }
+
+  .main-container__section-wrapper {
+    width: @desktop-content-width;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
