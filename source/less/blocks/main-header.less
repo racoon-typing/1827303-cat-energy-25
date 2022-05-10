@@ -13,21 +13,18 @@
 .main-header__wrapper-logo {
   min-height: 38px;
   display: flex;
-}
-
-.main-header__logo {
-  display: inline-block;
-  height: 38px;
-  margin-right: 56px;
+  align-items: center;
   padding-top: 10px;
   padding-bottom: 18px;
 }
 
+.main-header__logo {
+  display: block;
+  margin-right: 56px;
+}
+
 .main-header__logo-name {
-  display: inline-block;
-  height: 18px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  display: block;
 }
 
 .main-header__nav {
@@ -42,18 +39,30 @@
     justify-content: space-between;
     padding: 0 30px;
   }
+
+  .main-header__wrapper-logo {
+    padding-top: 24px;
+    padding-bottom: 2px;
+  }
+
+  .main-header__logo {
+    padding-top: 7px;
+    margin-right: 19px;
+  }
+
+  .main-header__logo-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .main-header__nav {
+    align-items: flex-end;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-header__wrapper {
     width: @desktop-content-width;
     margin: 0 auto;
-  }
-
-  .main-header__nav {
-    display: flex;
-    flex-wrap: wrap;
-    width: 478px;
-    justify-content: space-between;
   }
 }
