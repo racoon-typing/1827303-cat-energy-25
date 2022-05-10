@@ -6,16 +6,21 @@
   width: 320px;
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+}
+
+.main-header__wrapper-logo {
+  min-height: 38px;
+  display: flex;
 }
 
 .main-header__logo {
   display: inline-block;
   height: 38px;
   margin-right: 56px;
-  padding-top: 12px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 18px;
 }
 
 .main-header__logo-name {
@@ -26,8 +31,9 @@
 }
 
 .main-header__nav {
-  flex-grow: 1;
-  // width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 @media (min-width: @tablet-width) {
