@@ -9,10 +9,13 @@
 
 .promo__wrapper-title {
   min-height: 302px;
+  padding-top: 27px;
+  box-sizing: border-box;
   position: relative;
   background-image: url("../img/index/background-promo.png");
   background-position: center;
   background-repeat: no-repeat;
+  text-align: center;
   z-index: 0;
 }
 
@@ -28,12 +31,14 @@
 }
 
 .promo__wrapper-product {
+  position: relative;
   padding: 0 20px;
 }
 
 .promo__title {
   position: relative;
   margin: 0;
+  margin-bottom: 25px;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -56,7 +61,15 @@
 }
 
 .promo__product {
+  position: relative;
+  display: block;
+  top: @promo-shift;
+  margin-bottom: @promo-shift;
   object-fit: contain;
+}
+
+.promo__link {
+  margin-top: 3px;
 }
 
 @media (min-width: @tablet-width) {
