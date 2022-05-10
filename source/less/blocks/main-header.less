@@ -62,6 +62,16 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-header {
+    background-color: transparent;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
   .main-header__wrapper {
     width: @desktop-content-width;
     margin: 0 auto;
