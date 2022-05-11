@@ -9,10 +9,11 @@
   width: 210px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
 }
 
 .content-photo__range {
+  display: flex;
+  flex-grow: 1;
   margin: 0 13px;
 }
 
@@ -24,6 +25,8 @@
 
   .content-photo__list {
     display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
   }
 
   .content-photo__item {
@@ -36,13 +39,15 @@
     background-image: url("../img/index/slider-cat-fat.png");
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 2;
   }
 
   .content-photo__item--after {
     background-image: url("../img/index/slider-cat-skinny.png");
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 2;
+  }
+
+  .content-photo__range-slider {
+    width: 592px;
   }
 }
