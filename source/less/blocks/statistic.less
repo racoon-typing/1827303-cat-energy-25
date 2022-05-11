@@ -12,7 +12,6 @@
 .statistic__infographic-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 40px;
   align-items: center;
 }
 
@@ -21,6 +20,7 @@
   width: 100%;
   margin: 0;
   text-align: center;
+  text-transform: uppercase;
 }
 
 @media (min-width: @tablet-width) {
@@ -33,5 +33,18 @@
   .statistic__price-description {
     width: max-content;
     margin-left: auto;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .statistic__description {
+    margin-bottom: 72px;
+  }
+
+  .statistic__price-description {
+    width: 100%;
+    margin-left: 0;
   }
 }
