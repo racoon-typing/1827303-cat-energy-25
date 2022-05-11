@@ -1,9 +1,6 @@
-.statistic__text-wrapper {
-  margin-bottom: 20px;
-}
-
 .statistic__description {
   margin: 0;
+  margin-bottom: 20px;
   font-family: @second-font;
   font-style: normal;
   font-weight: 400;
@@ -14,15 +11,27 @@
 
 .statistic__infographic-wrapper {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 34px;
-}
-
-.statistic__total-price {
+  flex-wrap: wrap;
   margin-bottom: 40px;
+  align-items: center;
 }
 
 .statistic__price-description {
+  display: block;
+  width: 100%;
   margin: 0;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .statistic__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+
+  .statistic__price-description {
+    width: max-content;
+    margin-left: auto;
+  }
 }

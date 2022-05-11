@@ -6,6 +6,12 @@
   align-items: center;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  margin-bottom: 34px;
+  margin-right: auto;
+}
+
+.infographic__wrapper + .infographic__wrapper {
+  margin-right: 0;
 }
 
 .infographic__indicator {
@@ -36,4 +42,26 @@
   text-align: center;
   color: @color-text-second;
   background-color: @color-emphasize;
+}
+
+@media (min-width: @tablet-width) {
+  .infographic__wrapper {
+    width: 162px;
+    margin-right: 42px;
+  }
+
+  .infographic__indicator {
+    font-size: 30px;
+    line-height: 37px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  .infographic__indicator-description {
+    width: 114px;
+    top: 63px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: @color-main;
+  }
 }
