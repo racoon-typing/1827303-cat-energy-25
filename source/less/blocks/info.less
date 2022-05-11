@@ -200,4 +200,42 @@
   .info__item:not(:last-child) {
     margin-bottom: 0;
   }
+
+  .info__title {
+    padding-left: 161px;
+    margin-bottom: 73px;
+  }
+
+  .info__text {
+    margin-bottom: 23px;
+  }
+
+  .info__item::before {
+    width: 100px;
+    height: 100px;
+  }
+
+  .info__item:nth-child(1)::before {
+    top: 47px;
+    left: 51px;
+  }
+
+  .info__item:nth-child(1)::after {
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 66px;
+  }
+
+  .info__item:nth-child(2)::before {
+    top: 47px;
+    left: 52px;
+  }
+
+  .info__item:nth-child(2)::after {
+    width: 134px;
+    height: 56px;
+    top: 67px;
+    left: 32px;
+  }
 }
