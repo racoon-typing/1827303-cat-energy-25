@@ -40,10 +40,20 @@
 @media (min-width: @tablet-width) {
   .main-footer__wrapper {
     width: 708px;
-    padding: 0 30px;
+    padding: 58px 30px 55px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .main-footer__logo-name {
+    margin: 0;
+  }
+
+  .main-footer__logo-academy {
+    margin: 0;
+    width: 163px;
   }
 }
 
@@ -51,5 +61,6 @@
   .main-footer__wrapper {
     width: @desktop-content-width;
     margin: 0 auto;
+    padding: 58px 0;
   }
 }
