@@ -69,6 +69,8 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+  color: @color-text-second;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {
@@ -98,6 +100,13 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+
+    &--more {
+      margin: 0;
+      margin-bottom: 23px;
+      line-height: 22px;
+      color: @color-text-special;
+    }
   }
 
   .product__stats-item {
@@ -113,6 +122,19 @@
   .product__value {
     font-size: 16px;
     line-height: 16px;
+  }
+
+  .product__link {
+    margin-top: 33px;
+
+    &--more {
+      margin-top: 87px;
+    }
+  }
+
+  .product__description {
+    font-size: 16px;
+    line-height: 18px;
   }
 }
 
