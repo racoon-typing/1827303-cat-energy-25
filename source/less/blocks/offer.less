@@ -51,16 +51,33 @@
   .offer__wrapper {
     width: 708px;
     height: 200px;
-    margin: 0 auto;
+    margin: 70px auto 75px;
+    padding: 70px 124px 70px 422px;
     background-image: url("../img/catalog/bg-offer-tablet.png");
+  }
+
+  .offer__wrapper::before {
+    top: 57px;
+    left: 77px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
   .offer__wrapper {
     width: 245px;
     height: 289px;
-    padding: 0;
+    padding: 184px 40px 42px;
+    margin: 0;
     background-image: url("../img/catalog/bg-offer-desktop.png");
+  }
+
+  .offer__wrapper::before {
+    top: 55px;
   }
 }
