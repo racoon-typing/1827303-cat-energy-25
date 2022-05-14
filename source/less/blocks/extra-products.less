@@ -1,7 +1,6 @@
 .extra-products {
   color: @color-text-second;
   background-color: @color-main;
-  margin-top: 41px;
   border-top: 2px solid #68b738;
 }
 
@@ -35,10 +34,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .extra-products {
-    margin-top: 91px;
-  }
-
   .extra-products__title {
     width: 410px;
     font-size: 36px;
@@ -68,6 +63,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .extra-products {
+    border: none;
+  }
+
   .extra-products__list {
     width: 896px;
     padding: 0;
@@ -83,5 +82,13 @@
     padding: 0;
     padding-top: 15px;
     padding-bottom: 17px;
+    border-left: none;
+    border-right: none;
+  }
+
+  .extra-products__title {
+    top: -25px;
+    left: -173px;
+    margin-bottom: 55px;
   }
 }

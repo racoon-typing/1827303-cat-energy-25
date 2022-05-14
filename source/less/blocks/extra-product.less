@@ -52,9 +52,11 @@
   }
 
   .extra-product__value {
+    width: 44px;
     margin-left: 50px;
     font-size: 16px;
     line-height: 20px;
+    text-align: end;
   }
 
   .extra-product__link {
@@ -63,8 +65,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .extra-product__characteristic {
+    width: 132px;
+  }
+
+  .extra-product__value {
+    text-align: start;
+  }
+
   .extra-product__link {
     margin-left: 38px;
+    margin-top: 0;
     max-width: 244px;
   }
 }
