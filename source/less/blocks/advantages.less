@@ -121,6 +121,11 @@
     list-style-type: list-item;
   }
 
+  ol {
+    counter-reset: section;
+    list-style-type: none;
+  }
+
   .advantages__item {
     min-height: 280px;
     box-sizing: border-box;
@@ -155,18 +160,25 @@
     left: 24px;
   }
 
-  .advantages__item::marker {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    margin: 0;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 280px;
-    line-height: 280px;
-    color: #f2f2f2;
-  }
+  // .advantages__item::marker {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: min-content;
+  //   height: 280px;
+  //   display: block;
+  //   margin: 0;
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 280px;
+  //   line-height: 280px;
+  //   color: #f2f2f2;
+  // }
+
+  // li::marker {
+  //   counter-increment: section;
+  //   counter-reset: none;
+  // }
 
   .advantages__item-text {
     font-size: 16px;
