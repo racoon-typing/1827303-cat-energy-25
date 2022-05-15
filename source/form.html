@@ -165,21 +165,33 @@
         <fieldset class="form__input form__input--add-user add-user">
           <legend class="form__feildset-title title title--large">Дополнительно</legend>
           <ul class="form__list form__list--add input-list">
-            <li class="input-list__item item-info">
-              <input type="checkbox" name="sweetener" id="sweetener-field" checked>
-              <label for="sweetener-field">сахарозаменитель</label>
+            <li class="input-list__item">
+              <label class="input-list__item-label control">
+                <input class="visually-hidden control__input" type="checkbox" name="sweetener" checked>
+                <span class="control__mark control__mark--checkbox"></span>
+                <span class="control__label control__mark--checkbox">сахарозаменитель</span>
+              </label>
             </li>
             <li class="input-list__item item-info">
-              <input type="checkbox" name="water" id="water-field">
-              <label for="sweetener-field">питьевая вода</label>
+              <label >
+                <input type="checkbox" name="water">
+                <span class="control__mark"></span>
+                <span class="control__label">питьевая вода</span>
+              </label>
             </li>
             <li class="input-list__item item-info">
               <input type="checkbox" name="milk" id="milk-field">
-              <label for="sweetener-field">молоко</label>
+              <label for="sweetener-field">
+                <span class="control__mark"></span>
+                <span class="control__label">молоко</span>
+              </label>
             </li>
             <li class="input-list__item item-info--add">
               <input type="checkbox" name="vitamins" id="vitamins-field">
-              <label for="sweetener-field">витамины</label>
+              <label for="sweetener-field">витамины
+                <span class="control__mark"></span>
+                <span class="control__label">витамины</span>
+              </label>
             </li>
           </ul>
         </fieldset>
