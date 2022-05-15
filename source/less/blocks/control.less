@@ -33,3 +33,22 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media (min-width: @tablet-width) {
+  .control__mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .control__input[type="radio"]:checked + .control__mark::before {
+    top: 11px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .control__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

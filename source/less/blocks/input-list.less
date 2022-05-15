@@ -9,7 +9,6 @@
   margin-bottom: 0;
 }
 
-
 .input-list__item-label {
   font-family: @main-font;
   font-style: normal;
@@ -22,4 +21,19 @@
   align-items: center;
   padding-left: 45px;
   min-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .input-list__item {
+    margin-bottom: 20px;
+
+    &--radio {
+      margin-bottom: 13px;
+    }
+  }
+
+  .input-list__item-label {
+    min-height: 40px;
+    padding-left: 60px;
+  }
 }

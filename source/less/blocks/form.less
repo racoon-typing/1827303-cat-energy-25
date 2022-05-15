@@ -1,3 +1,7 @@
+.form__feildset-wrapper {
+  margin-bottom: 26px;
+}
+
 .form__input {
   width: 280px;
   padding: 0 20px;
@@ -10,13 +14,9 @@
     border-top: 2px solid #68b738;
   }
 
-  &--contact-user {
-    margin-top: 26px;
-  }
-
-  &--comment-user,
-  &--add-user {
-    margin-top: 23px;
+  &--contact-user,
+  &--comment-user {
+    margin-bottom: 23px;
   }
 
   &--cat-info {
@@ -91,9 +91,23 @@
 }
 
 @media (min-width: @tablet-width) {
+  .form__feildset-wrapper {
+    margin-bottom: 71px;
+  }
+
   .form__input {
     width: 630px;
     padding: 0;
+
+    &--cat-info {
+      margin-bottom: 72px;
+    }
+
+    &--change-weght {
+      box-sizing: border-box;
+      padding: 25px 27px 30px;
+      border: 1px solid #e7e7e7;
+    }
   }
 
   .form__list-wrapper {
@@ -131,6 +145,7 @@
     display: grid;
     grid-template-columns: repeat(2, 568px);
     gap: 80px;
+    margin-bottom: 70px;
   }
 
   .form__input {
