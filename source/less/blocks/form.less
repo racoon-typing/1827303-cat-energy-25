@@ -10,6 +10,15 @@
     border-top: 2px solid #68b738;
   }
 
+  &--contact-user {
+    margin-top: 26px;
+  }
+
+  &--comment-user,
+  &--add-user {
+    margin-top: 23px;
+  }
+
   &--cat-info {
     padding-bottom: 24px;
   }
@@ -23,12 +32,15 @@
 }
 
 .form__feildset-title {
+  position: relative;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: @color-text-main;
+  margin-left: -20px;
   margin-bottom: 35px;
+  padding: 0 20px;
 }
 
 .form__list {
@@ -63,8 +75,9 @@
 }
 
 .form__item-description {
-  padding: 10px 15px;
+  padding: 10px 12px;
   box-sizing: border-box;
+  font-family: @main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
