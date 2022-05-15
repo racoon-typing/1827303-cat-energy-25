@@ -167,9 +167,13 @@
     line-height: 30px;
     color: @color-main;
     background-color: transparent;
+
+    &--dark {
+      color: @color-text-special;
+    }
   }
 
-  .main-nav__link--current::before {
+  .main-nav__link--current-special::before {
     background-color: @color-main;
   }
 }
