@@ -28,16 +28,16 @@
 }
 
 .advantages__item {
+  position: relative;
   min-height: 60px;
   box-sizing: border-box;
-  position: relative;
   padding-top: 2px;
   padding-bottom: 4px;
   padding-left: 80px;
   margin-bottom: 20px;
 }
 
-.advantages__item::before {
+.advantages__item::after {
   content: "";
   position: absolute;
   width: 60px;
@@ -45,43 +45,24 @@
   background-color: @color-accent;
   top: 0;
   left: 0;
-}
-
-.advantages__item::after {
-  content: "";
-  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .advantages__item:nth-child(1)::after {
-  width: 30px;
-  height: 32px;
-  top: 14px;
-  left: 15px;
-  content: url("../img/index/svg/icon-leaf.svg");
+  background-image: url("../img/index/svg/icon-leaf.svg");
 }
 
 .advantages__item:nth-child(2)::after {
-  width: 30px;
-  height: 32px;
-  top: 13px;
-  left: 15px;
-  content: url("../img/index/svg/icon-tub.svg");
+  background-image: url("../img/index/svg/icon-tub.svg");
 }
 
 .advantages__item:nth-child(3)::after {
-  width: 30px;
-  height: 32px;
-  top: 15px;
-  left: 18px;
-  content: url("../img/index/svg/icon_eat.svg");
+  background-image: url("../img/index/svg/icon_eat.svg");
 }
 
 .advantages__item:nth-child(4)::after {
-  width: 30px;
-  height: 32px;
-  top: 13px;
-  left: 14px;
-  content: url("../img/index/svg/icon_alarm.svg");
+  background-image: url("../img/index/svg/icon_alarm.svg");
 }
 
 .advantages__item-number {
@@ -118,7 +99,9 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 134px;
     row-gap: 37px;
-    list-style-type: list-item;
+
+    counter-reset: section;
+    // list-style-type: list-item;
   }
 
   // ol {
@@ -135,39 +118,12 @@
   }
 
   .advantages__item::before {
-    width: 80px;
-    height: 80px;
-    top: 40px;
-  }
-
-  .advantages__item:nth-child(1)::after {
-    top: 67px;
-    left: 27px;
-  }
-
-  .advantages__item:nth-child(2)::after {
-    top: 63px;
-    left: 25px;
-  }
-
-  .advantages__item:nth-child(3)::after {
-    top: 65px;
-    left: 28px;
-  }
-
-  .advantages__item:nth-child(4)::after {
-    top: 63px;
-    left: 24px;
-  }
-
-  .advantages__item::marker {
+    counter-increment: section;
+    content: counter(section) "";
     position: absolute;
-    content: "";
-    width: 300px;
     top: 0;
     right: 0;
-    height: 280px;
-    display: block;
+    display: inline-block;
     margin: 0;
     font-style: normal;
     font-weight: 400;
@@ -176,10 +132,11 @@
     color: #f2f2f2;
   }
 
-  // li::marker {
-  //   counter-increment: section;
-  //   counter-reset: none;
-  // }
+  .advantages__item::after {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+  }
 
   .advantages__item-text {
     font-size: 16px;
