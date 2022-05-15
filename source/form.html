@@ -94,15 +94,15 @@
             <legend class="visually-hidden">Анкета кошки</legend>
             <ul class="form__list input-list">
               <li class="input-list__item item-info">
-                <label for="name-field">Имя:*</label>
+                <label class="item-info__field" for="name-field">Имя:*</label>
                 <input class="item-info__input" type="text" id="name-field" name="name" placeholder="барсик">
               </li>
               <li class="input-list__item item-info">
-                <label for="weight-field">Вес (кг):*</label>
+                <label class="item-info__field" for="weight-field">Вес (кг):*</label>
                 <input class="item-info__input" type="text" id="weight-field" name="weight" placeholder="7">
               </li>
               <li class="input-list__item item-info">
-                <label for="age-field">Возраст (лет):</label>
+                <label class="item-info__field" for="age-field">Возраст (лет):</label>
                 <input class="item-info__input" type="text" id="age-field" name="age" placeholder="7">
               </li>
             </ul>
@@ -133,13 +133,13 @@
             (владельца кота)</legend>
           <ul class="form__list form__list--info-user input-list">
             <li class="input-list__item item-info">
-              <label class="info-user__field" for="e-mail-field">E-mail:*</label>
-              <input class="item-info__input" type="email" id="e-mail-field" name="email"
+              <label class="item-info__field" for="e-mail-field">E-mail:*</label>
+              <input class="item-info__input item-info__input--contacts" type="email" id="e-mail-field" name="email"
                 placeholder="kuklachev@gmail.com">
             </li>
             <li class="input-list__item item-info">
-              <label class="info-user__field" for="phone-field">Телефон:*</label>
-              <input class="item-info__input" type="tel" id="phone-field" name="phone" placeholder="8 (960) 900-60-90"
+              <label class="item-info__field" for="phone-field">Телефон:*</label>
+              <input class="item-info__input item-info__input--contacts" type="tel" id="phone-field" name="phone" placeholder="8 (960) 900-60-90"
                 pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
             </li>
           </ul>
