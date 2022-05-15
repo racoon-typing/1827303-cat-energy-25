@@ -1,19 +1,80 @@
-.infographic {
-  width: 280px;
-  margin: 0 auto;
+.infographic__wrapper {
+  position: relative;
+  width: 124px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  margin-bottom: 34px;
+  margin-right: auto;
+}
+
+.infographic__wrapper + .infographic__wrapper {
+  margin-right: 0;
 }
 
 .infographic__indicator {
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 18px;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  color: @color-text-main;
 }
 
 .infographic__indicator-description {
+  position: absolute;
+  top: 46px;
+  display: block;
+  width: 87px;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: @second-font;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 100%;
+  line-height: 1;
+  text-align: center;
+  color: @color-text-second;
+  background-color: @color-emphasize;
+}
+
+@media (min-width: @tablet-width) {
+  .infographic__wrapper {
+    width: 162px;
+    margin-right: 42px;
+    margin-bottom: 25px;
+  }
+
+  .infographic__indicator {
+    font-size: 30px;
+    line-height: 37px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  .infographic__indicator-description {
+    width: 114px;
+    top: 63px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: @color-main;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .infographic__wrapper {
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+
+  .infographic__indicator-description {
+    background-color: @color-second;
+  }
 }

@@ -1,7 +1,50 @@
 .statistic__description {
+  margin: 0;
+  margin-bottom: 20px;
   font-family: @second-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  color: @color-text-second;
+}
+
+.statistic__infographic-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.statistic__price-description {
+  display: block;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .statistic__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+
+  .statistic__price-description {
+    width: max-content;
+    margin-left: auto;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .statistic__description {
+    margin-bottom: 72px;
+  }
+
+  .statistic__price-description {
+    width: 100%;
+    margin-left: 0;
+  }
 }

@@ -4,7 +4,7 @@
 
 .info__wrapper {
   width: 280px;
-  padding: 0 20px;
+  padding: 20px;
   margin: 0 auto;
 }
 
@@ -15,16 +15,72 @@
 }
 
 .info__item {
+  position: relative;
   min-height: 266px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+  padding-top: 30px;
+  padding-bottom: 13px;
+  margin-bottom: 20px;
   color: @color-text-main;
   background-color: @color-second;
+  background-repeat: no-repeat;
 }
 
-.info__item:not(:last-child) {
-  margin-bottom: 20px;
+.info__item:last-child {
+  margin-bottom: 0;
+}
+
+.info__item::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: @color-accent;
+}
+
+.info__item:nth-child(1)::before {
+  left: 22px;
+  top: 29px;
+}
+
+.info__item:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 50px;
+  left: 29px;
+  top: 26px;
+  z-index: 2;
+  background-image: url("../img/index/svg/cat-thin.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info__item:nth-child(2)::before {
+  left: 22px;
+  top: 24px;
+}
+
+.info__item:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 28px;
+  left: 13px;
+  top: 35px;
+  z-index: 2;
+  background-image: url("../img/index/svg/tiger.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .info__title {
+  padding-left: 71px;
+  margin: 0;
+  margin-bottom: 29px;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -34,6 +90,8 @@
 
 .info__text {
   font-family: @second-font;
+  margin: 0;
+  margin-bottom: 38px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -43,7 +101,12 @@
 }
 
 .info__link {
-  display: flex;
+  display: block;
+  min-height: 24px;
+  width: max-content;
+  box-sizing: border-box;
+  padding: 4px 0;
+  padding-right: 47px;
   flex-direction: row;
   align-items: center;
   font-style: normal;
@@ -55,16 +118,72 @@
   text-transform: uppercase;
   color: @color-text-main;
   background-color: @color-second;
+  background-image: url("../img/index/svg/icon_arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
 }
 
 @media (min-width: @tablet-width) {
   .info__wrapper {
     width: 708px;
     padding: 0 30px;
+    padding-bottom: 45px;
   }
 
   .info__item {
+    width: 708px;
     min-height: 372px;
+    padding: 77px 316px 52px 52px;
+    margin-bottom: 30px;
+  }
+
+  .info__title {
+    padding: 0;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  .info__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 48px;
+  }
+
+  .info__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .info__item::before {
+    width: 200px;
+    height: 200px;
+  }
+
+  .info__item:nth-child(1)::before {
+    top: 81px;
+    left: 446px;
+  }
+
+  .info__item:nth-child(1)::after {
+    width: 140px;
+    height: 194px;
+    top: 81px;
+    left: 476px;
+    background-size: 140px;
+  }
+
+  .info__item:nth-child(2)::before {
+    top: 91px;
+    left: 448px;
+  }
+
+  .info__item:nth-child(2)::after {
+    width: 268px;
+    height: 112px;
+    top: 135px;
+    left: 412px;
+    background-size: 268px;
   }
 }
 
@@ -72,6 +191,8 @@
   .info__wrapper {
     width: 1220px;
     padding: 0 110px;
+    padding-top: 82px;
+    padding-bottom: 71px;
     margin: 0 auto;
   }
 
@@ -84,9 +205,50 @@
   .info__item {
     width: 570px;
     min-height: 374px;
+    padding: 77px 52px 55px;
   }
 
   .info__item:not(:last-child) {
     margin-bottom: 0;
+  }
+
+  .info__title {
+    padding-left: 161px;
+    margin-bottom: 73px;
+  }
+
+  .info__text {
+    margin-bottom: 23px;
+  }
+
+  .info__item::before {
+    width: 100px;
+    height: 100px;
+  }
+
+  .info__item:nth-child(1)::before {
+    top: 47px;
+    left: 51px;
+  }
+
+  .info__item:nth-child(1)::after {
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 66px;
+    background-size: 70px;
+  }
+
+  .info__item:nth-child(2)::before {
+    top: 47px;
+    left: 52px;
+  }
+
+  .info__item:nth-child(2)::after {
+    width: 134px;
+    height: 56px;
+    top: 67px;
+    left: 32px;
+    background-size: 134px;
   }
 }

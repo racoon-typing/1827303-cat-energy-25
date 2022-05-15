@@ -9,10 +9,13 @@
 
 .promo__wrapper-title {
   min-height: 302px;
+  padding-top: 27px;
+  box-sizing: border-box;
   position: relative;
   background-image: url("../img/index/background-promo.png");
   background-position: center;
   background-repeat: no-repeat;
+  text-align: center;
   z-index: 0;
 }
 
@@ -28,12 +31,14 @@
 }
 
 .promo__wrapper-product {
+  position: relative;
   padding: 0 20px;
 }
 
 .promo__title {
   position: relative;
   margin: 0;
+  margin-bottom: 25px;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -56,11 +61,19 @@
 }
 
 .promo__product {
+  display: block;
+  margin-top: @promo-shift;
   object-fit: contain;
+}
+
+.promo__link {
+  margin-top: 3px;
+  min-height: 40px;
 }
 
 @media (min-width: @tablet-width) {
   .promo__wrapper {
+    padding-top: 62px;
     width: 768px;
   }
 
@@ -68,6 +81,7 @@
     background-image: none;
     min-height: auto;
     padding: 0 117px;
+    padding-bottom: 20px;
   }
 
   .promo__wrapper-title::after {
@@ -77,11 +91,18 @@
   .promo__title {
     color: @color-text-main;
     background-color: @color-main;
+    text-align: start;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 45px;
   }
 
   .promo__slogan {
     color: @color-text-main;
     background-color: @color-main;
+    text-align: start;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .promo__wrapper-product {
@@ -102,12 +123,17 @@
 
   .promo__product {
     display: none;
+    margin: 0;
   }
 
-  .promo__link {
+  .promo .promo__link {
     position: absolute;
-    top: 29px;
-    left: 91px;
+    top: 27px;
+    left: 120px;
+    width: 244px;
+    min-height: 54px;
+    font-size: 20px;
+    line-height: 20px;
     z-index: 1;
   }
 }
@@ -115,15 +141,22 @@
 @media (min-width: @desktop-width) {
   .promo__wrapper {
     width: 1440px;
+    padding: 0;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
   }
 
   .promo__wrapper-title {
-    width: 720px;
+    width: 50%;
     box-sizing: border-box;
-    padding: 0 80px;
+    padding: 0;
+    padding-left: 190px;
+    padding-top: 223px;
+  }
+
+  .promo__title {
+    margin-bottom: 40px;
   }
 
   .promo__wrapper-product {
@@ -164,7 +197,7 @@
     display: none;
   }
 
-  .promo__link {
+  .promo .promo__link {
     position: absolute;
     top: 455px;
     left: -530px;

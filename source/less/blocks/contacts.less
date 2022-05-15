@@ -13,12 +13,14 @@
 
 .contacts__adress-wrapper {
   width: 280px;
-  padding: 0 20px;
+  padding: 26px 20px;
   display: flex;
   justify-content: space-between;
 }
 
 .contacts__offer {
+  margin: 0;
+  margin-right: 2px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -28,11 +30,14 @@
 }
 
 .contacts__adress {
+  margin: 0;
+  font-family: @second-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: @color-text-second;
+  text-align: right;
 }
 
 .contacts__location {
@@ -47,6 +52,10 @@
   left: 134px;
 }
 
+.contacts__map {
+  display: block;
+}
+
 @media (min-width: @tablet-width) {
   .contacts__wrapper {
     width: 768px;
@@ -54,7 +63,19 @@
 
   .contacts__adress-wrapper {
     width: 628px;
-    padding: 0 70px;
+    padding: 56px 70px;
+  }
+
+  .contacts__offer {
+    width: 171px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__adress {
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .contacts__location {
@@ -92,6 +113,14 @@
     z-index: 1;
     top: 95px;
     left: 110px;
+  }
+
+  .contacts__offer {
+    width: 163px;
+  }
+
+  .contacts__adress {
+    width: 155px;
   }
 
   .contacts__location {
