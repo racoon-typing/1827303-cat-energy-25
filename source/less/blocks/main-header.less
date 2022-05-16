@@ -14,8 +14,6 @@
 .main-header__wrapper-logo {
   display: flex;
   align-items: center;
-  padding-top: 12px;
-  padding-bottom: 15px;
 }
 
 .main-header__logo {
@@ -39,6 +37,13 @@
   display: flex;
   align-items: center;
   margin-left: auto;
+}
+
+@media (min-width: @mobile-width-only) {
+  .main-header__wrapper-logo {
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
 }
 
 @media (min-width: @tablet-width) {
