@@ -28,6 +28,11 @@
   text-transform: uppercase;
 }
 
+.statistic__price-description br {
+  display: none;
+}
+
+
 @media (min-width: @tablet-width) {
   .statistic__description {
     font-size: 16px;
@@ -39,12 +44,16 @@
     display: block;
   }
 
-
   .statistic__price-description {
     width: max-content;
     margin-left: auto;
     font-size: 20px;
     line-height: 20px;
+    text-align: right;
+  }
+
+  .statistic__price-description br {
+    display: block;
   }
 }
 
@@ -54,7 +63,12 @@
   }
 
   .statistic__price-description {
-    width: 100%;
+    width: 327px;
     margin-left: 0;
+    text-align: left;
+  }
+
+  .statistic__price-description br {
+    display: none;
   }
 }
