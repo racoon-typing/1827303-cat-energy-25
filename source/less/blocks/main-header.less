@@ -4,6 +4,7 @@
 
 .main-header__wrapper {
   width: 320px;
+  min-height: 38px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -11,9 +12,10 @@
 }
 
 .main-header__wrapper-logo {
-  min-height: 66px;
   display: flex;
   align-items: center;
+  padding-top: 12px;
+  padding-bottom: 15px;
 }
 
 .main-header__logo {
@@ -21,7 +23,15 @@
   margin-right: 56px;
 }
 
+.main-header__logo-icon {
+  display: block;
+}
+
 .main-header__logo-name {
+  display: block;
+}
+
+.main-header__logo-name-icon {
   display: block;
 }
 
@@ -31,16 +41,19 @@
   margin-left: auto;
 }
 
+@media (min-width: @mobile-width-only) {
+  .main-header__wrapper-logo {
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .main-header__wrapper {
     width: 708px;
     justify-content: space-between;
     padding: 0 30px;
-  }
-
-  .main-header__wrapper-logo {
-    min-height: 78px;
-    align-items: flex-end;
+    padding-top: 24px;
   }
 
   .main-header__logo {
@@ -50,10 +63,6 @@
   .main-header__logo-icon {
     width: 44px;
     height: 44px;
-  }
-
-  .main-header__logo-name {
-    padding-bottom: 16px;
   }
 
   .main-header__nav {
@@ -70,15 +79,16 @@
     left: 0;
     right: 0;
     z-index: 1;
+
+    &--static {
+      position: static;
+    }
   }
 
   .main-header__wrapper {
     width: @desktop-content-width;
     margin: 0 auto;
-  }
-
-  .main-header__wrapper-logo {
-    min-height: 112px;
+    padding-top: 54px;
   }
 
   .main-header__logo {

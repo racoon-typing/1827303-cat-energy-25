@@ -1,4 +1,49 @@
 .input-list__item {
+  position: relative;
   display: flex;
   margin-bottom: 13px;
+  align-items: center;
+}
+
+.input-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.input-list__item-label {
+  font-family: @main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @color-title-small;
+  display: flex;
+  align-items: center;
+  padding-left: 45px;
+  min-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .input-list__item {
+    margin-bottom: 20px;
+
+    &--radio {
+      margin-bottom: 13px;
+    }
+
+    &--checkbox {
+      margin-bottom: 0;
+    }
+  }
+
+  .input-list__item-label {
+    min-height: 40px;
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .input-list__item {
+    margin-bottom: 0;
+  }
 }

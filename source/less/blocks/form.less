@@ -1,23 +1,59 @@
+.form__feildset-wrapper {
+  margin-bottom: 26px;
+}
+
+.form__input-wrapper {
+  position: relative;
+}
+
+.form__input-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  width: 100%;
+  height: 2px;
+  background-color: @color-accent;
+  z-index: 1;
+}
+
 .form__input {
+  position: relative;
   width: 280px;
   padding: 0 20px;
-  margin: 0;
+  margin: 0 auto;
   border: none;
+  z-index: 2;
 
   &--contact-user,
-  &--comment-user,
-  &--add-user {
-    border-top: 2px solid #68b738;
+  &--comment-user {
+    margin-bottom: 23px;
+  }
+
+  &--cat-info {
+    padding-bottom: 24px;
+  }
+
+  &--change-weght {
+    padding-top: 22px;
+    padding-bottom: 20px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
   }
 }
 
 .form__feildset-title {
+  position: relative;
+  width: max-content;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: @color-text-main;
+  background-color: @color-main;
+  margin: 0;
+  margin-left: -20px;
   margin-bottom: 35px;
+  padding: 0 20px;
 }
 
 .form__list {
@@ -26,17 +62,25 @@
   list-style-type: none;
 }
 
+.form__link-wrapper-container {
+  margin-top: 34px;
+  margin-bottom: 32px;
+}
+
 .form__link-wrapper {
   width: 280px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 .form__link {
   width: 280px;
   min-height: 40px;
+  margin-bottom: 21px;
 }
 
 .form__text-info {
+  margin: 0;
   font-family: @second-font;
   font-style: normal;
   font-weight: 400;
@@ -52,8 +96,9 @@
 }
 
 .form__item-description {
-  padding: 10px 15px;
+  padding: 10px 12px;
   box-sizing: border-box;
+  font-family: @main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -63,29 +108,72 @@
 }
 
 @media (min-width: @tablet-width) {
+  .form__feildset-wrapper {
+    margin-bottom: 71px;
+  }
+
+  .form__input-wrapper::before {
+    top: 24px;
+  }
+
   .form__input {
     width: 630px;
     padding: 0;
+
+    &--cat-info {
+      margin-bottom: 72px;
+    }
+
+    &--change-weght {
+      box-sizing: border-box;
+      padding: 25px 27px 30px;
+      border: 1px solid #e7e7e7;
+    }
+
+    &--contact-user {
+      margin-bottom: 65px;
+    }
   }
 
-  .form__list-wrapper {
-    width: 565px;
+  .form__feildset-title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 40px;
+    margin-left: -40px;
+    margin-bottom: 76px;
+
+    &--checkbox {
+      margin-bottom: 57px;
+    }
+  }
+
+  .form__feildset-title br {
+    display: none;
   }
 
   .form__list--add {
     display: grid;
-    grid-template-columns: 282px 282px;
+    grid-template-columns: 221px 221px;
+    column-gap: 123px;
+    row-gap: 32px;
+  }
+
+  .form__link-wrapper-container {
+    margin-top: 54px;
+    margin-bottom: 72px;
   }
 
   .form__link-wrapper {
-    width: 565px;
+    width: 630px;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
   }
 
   .form__link {
     min-height: 52px;
+    margin-bottom: 0;
+    margin-right: 61px;
   }
 
   .form__item {
@@ -95,14 +183,27 @@
 
   .form__item-description {
     padding: 10px 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__text-info {
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .form__feildset-wrapper-container {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
   .form__feildset-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 568px);
     gap: 80px;
+    margin-bottom: 70px;
   }
 
   .form__input {
@@ -112,10 +213,18 @@
     &--change-weght {
       width: 568px;
     }
-  }
 
-  .form__list-wrapper {
-    width: 1220px;
+    &--contact-user {
+      margin-bottom: 70px;
+    }
+
+    &--comment-user {
+      margin-bottom: 67px;
+    }
+
+    &--cat-info {
+      margin-bottom: 0;
+    }
   }
 
   .form__list--add {
@@ -130,11 +239,14 @@
   }
 
   .form__link-wrapper {
-    width: 829px;
+    width: 1220px;
+    margin-top: 61px;
+    margin-bottom: 82px;
   }
 
   .form__link {
     width: 568px;
+    margin-right: 81px;
   }
 
   .form__item {

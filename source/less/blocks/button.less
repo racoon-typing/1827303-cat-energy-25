@@ -25,8 +25,8 @@
   &--disabled {
     font-size: 16px;
     line-height: 20px;
-    color: @color-second;
-    background-color: @color-emphasize;
+    color: @color-text-second;
+    background-color: @color-second;
   }
 
   &--transparent {
@@ -42,5 +42,12 @@
     text-align: center;
     text-transform: uppercase;
     color: @color-text-main;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button--main {
+    font-size: 20px;
+    line-height: 1;
   }
 }

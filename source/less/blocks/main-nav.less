@@ -90,7 +90,7 @@
     position: absolute;
     margin: 0 auto;
     width: 320px;
-    top: 66px;
+    top: 65px;
     right: 0;
     left: 0;
     z-index: 10;
@@ -167,9 +167,13 @@
     line-height: 30px;
     color: @color-main;
     background-color: transparent;
+
+    &--dark {
+      color: @color-text-special;
+    }
   }
 
-  .main-nav__link--current::before {
+  .main-nav__link--current-special::before {
     background-color: @color-main;
   }
 }

@@ -89,6 +89,7 @@
 }
 
 .info__text {
+  position: relative;
   font-family: @second-font;
   margin: 0;
   margin-bottom: 38px;
@@ -98,6 +99,15 @@
   line-height: 18px;
   color: @color-text-second;
   background-color: @color-second;
+}
+
+.info__text::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -23px;
+  background-color: #d9d9d9;
 }
 
 .info__link {

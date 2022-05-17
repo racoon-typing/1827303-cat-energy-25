@@ -35,6 +35,22 @@
   padding-bottom: 4px;
   padding-left: 80px;
   margin-bottom: 20px;
+
+  &--nutritious::after {
+    background-image: url("../img/index/svg/icon-leaf.svg");
+  }
+
+  &--powder::after {
+    background-image: url("../img/index/svg/icon-tub.svg");
+  }
+
+  &--meal::after {
+    background-image: url("../img/index/svg/icon_eat.svg");
+  }
+
+  &--weight::after {
+    background-image: url("../img/index/svg/icon_alarm.svg");
+  }
 }
 
 .advantages__item::after {
@@ -47,26 +63,6 @@
   left: 0;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.advantages__item:nth-child(1)::after {
-  background-image: url("../img/index/svg/icon-leaf.svg");
-}
-
-.advantages__item:nth-child(2)::after {
-  background-image: url("../img/index/svg/icon-tub.svg");
-}
-
-.advantages__item:nth-child(3)::after {
-  background-image: url("../img/index/svg/icon_eat.svg");
-}
-
-.advantages__item:nth-child(4)::after {
-  background-image: url("../img/index/svg/icon_alarm.svg");
-}
-
-.advantages__item-number {
-  display: none;
 }
 
 .advantages__item-text {
