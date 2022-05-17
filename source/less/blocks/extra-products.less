@@ -1,22 +1,22 @@
 .extra-products {
   color: @color-text-second;
   background-color: @color-main;
-  border-top: 2px solid #68b738;
 }
 
 .extra-products__title {
   position: relative;
-  top: -17px;
-  left: -20px;
-  width: 280px;
+  left: -27px;
+  width: max-content;
+  padding: 0 20px;
   margin: 0 auto;
-  margin-bottom: 18px;
+  margin-bottom: 36px;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
   color: @color-text-main;
   background-color: @color-main;
+  z-index: 2;
 }
 
 .extra-products__list {
@@ -35,12 +35,11 @@
 
 @media (min-width: @tablet-width) {
   .extra-products__title {
-    width: 410px;
     font-size: 36px;
     line-height: 36px;
-    top: -23px;
     left: -149px;
-    margin-bottom: 57px;
+    padding: 0 35px;
+    margin-bottom: 80px;
   }
 
   .extra-products__list {
@@ -87,7 +86,6 @@
   }
 
   .extra-products__title {
-    top: -25px;
     left: -173px;
     margin-bottom: 65px;
   }
