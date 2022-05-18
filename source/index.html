@@ -154,12 +154,22 @@
 
           <ul class="statistics__list slider__list">
             <li class="statistics__item statistics__item--before slider__item">
-              <img class="statistics__item-photo" src="img/index/cat-before.png" srcset="img/index/cat-before@2x.png 2x"
-                width="280" height="232" alt="Кот до терапии">
+              <picture>
+                <source media="(min-width: 1440px)" width="202" height="59" srcset="img/index/svg/logo-desktop.svg">
+                <source media="(min-width: 768px)" width="296" height="511"
+                  srcset="img/index/cat-before-tablet.png 1x, img/index/cat-before-tablet@2x.png 2x">
+                <img class="statistics__item-photo" src="img/index/cat-before.png"
+                  srcset="img/index/cat-before@2x.png 2x" width="280" height="232" alt="Кот до терапии">
+              </picture>
             </li>
             <li class="statistics__item statistics__item--after slider__item">
-              <img class="statistics__item-photo" src="img/index/cat-after.png" srcset="img/index/cat-after@2x.png 2x"
-                width="243" height="232" alt="Кот после терапии">
+              <picture>
+                <source media="(min-width: 1440px)" width="202" height="59" srcset="img/index/svg/logo-desktop.svg">
+                <source media="(min-width: 768px)" width="296" height="511"
+                  srcset="img/index/cat-after-tablet.png 1x, img/index/cat-after-tablet@2x.png 2x">
+                <img class="statistics__item-photo" src="img/index/cat-after.png" srcset="img/index/cat-after@2x.png 2x"
+                  width="243" height="232" alt="Кот после терапии">
+              </picture>
             </li>
           </ul>
           <div class="statistics__range-slider">
