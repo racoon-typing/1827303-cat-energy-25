@@ -292,9 +292,15 @@
 
           <li class="products__item product">
             <div class="product__photo-wrapper">
-              <img class="product__photo" src="img/catalog/products/mobile/product-7.jpg"
-                srcset="img/catalog/products/mobile/product-7.jpg 1x, img/catalog/products/mobile/product-7@2x.jpg 2x"
-                width="72" height="84" alt="Корм для кошек">
+              <picture>
+                <source media="(min-width: 1440px)" width="163" height="174"
+                  srcset="img/catalog/products/desktop/product-7-desktop.png 1x, img/catalog/products/desktop/product-7-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" width="163" height="174"
+                  srcset="img/catalog/products/tablet/product-7-tablet.png 1x, img/catalog/products/tablet/product-7-tablet@2x.png 2x">
+                <img class="product__photo" src="img/catalog/products/mobile/product-7.jpg"
+                  srcset="img/catalog/products/mobile/product-7.jpg 1x, img/catalog/products/mobile/product-7@2x.jpg 2x"
+                  width="72" height="84" alt="Корм для кошек">
+              </picture>
             </div>
             <div class="product__wrapper-text">
               <h3 class="product__title">Cat Energy<br>
