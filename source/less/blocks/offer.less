@@ -15,9 +15,11 @@
 }
 
 @media (min-resolution: 2dppx) {
-  background-image: url("../img/catalog/bg-offer@2x.jpg");
+  .offer__wrapper {
+    background-image: url("../img/catalog/bg-offer@2x.jpg");
+    background-size: 279px auto;
+  }
 }
-
 
 .offer__wrapper::before {
   content: url("../../img/catalog/svg/icon_gift.svg");
@@ -58,7 +60,14 @@
     height: 200px;
     margin: 70px auto 75px;
     padding: 70px 124px 70px 422px;
-    background-image: url("../img/catalog/bg-offer-tablet.png");
+    background-image: url("../img/catalog/bg-offer-tablet.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .offer__wrapper {
+      background-image: url("../img/catalog/bg-offer-tablet@2x.jpg");
+      background-size: 707px auto;
+    }
   }
 
   .offer__wrapper::before {
@@ -75,11 +84,18 @@
   }
 
   .offer__wrapper {
-    width: 245px;
+    width: 246px;
     height: 289px;
     padding: 184px 40px 42px;
     margin: 0;
-    background-image: url("../img/catalog/bg-offer-desktop.png");
+    background-image: url("../img/catalog/bg-offer-desktop.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .offer__wrapper {
+      background-image: url("../img/catalog/bg-offer-desktop@2x.jpg");
+      background-size: 245px auto;
+    }
   }
 
   .offer__wrapper::before {
