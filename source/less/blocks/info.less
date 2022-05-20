@@ -111,6 +111,7 @@
 }
 
 .info__link {
+  position: relative;
   display: block;
   min-height: 24px;
   width: max-content;
@@ -128,6 +129,20 @@
   text-transform: uppercase;
   color: @color-text-main;
   background-color: @color-second;
+
+  &:hover .info__link-arrow {
+    width: 32px;
+  }
+}
+
+.info__link-arrow {
+  position: absolute;
+  width: 24px;
+  height: 12px;
+  top: 0;
+  bottom: 0;
+  right: 8px;
+  margin: auto;
 }
 
 @media (min-width: @tablet-width) {
