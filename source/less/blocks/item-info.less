@@ -9,7 +9,7 @@
 .item-info__input {
   display: flex;
   flex-grow: 1;
-  min-height: 46px;
+  height: 46px;
   box-sizing: border-box;
   padding: 13px 15px;
   font-family: @main-font;
@@ -23,6 +23,20 @@
 
   &--contacts {
     border: 1px solid #cdcdcd;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+    padding: 12px 14px;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+    padding: 12px 14px;
   }
 }
 
