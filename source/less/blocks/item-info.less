@@ -7,6 +7,7 @@
 }
 
 .item-info__input {
+  position: relative;
   display: flex;
   flex-grow: 1;
   height: 46px;
@@ -22,6 +23,8 @@
   border: 1px solid #e7e7e7;
 
   &--contacts {
+    padding-right: 40px;
+
     &:hover {
       border: 1px solid #cdcdcd;
     }
@@ -51,6 +54,16 @@
     padding: 12px 14px;
   }
 }
+
+.item-info__icon--letter {
+  display: block;
+  position: absolute;
+}
+
+// .item-info__icon {
+//   position: absolute;
+//   content: "";
+// }
 
 @media (min-width: @tablet-width) {
   .item-info__field {
