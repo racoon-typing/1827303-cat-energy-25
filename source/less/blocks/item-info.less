@@ -1,3 +1,16 @@
+// .item-info::before {
+//   position: absolute;
+//   content: url("../img/form/svg/icon-letter.svg");
+//   display: block;
+//   width: 19px;
+//   height: 14px;
+//   top: 0;
+//   bottom: 0;
+//   right: 20px;
+//   margin: auto;
+//   z-index: 2;
+// }
+
 .item-info__field {
   margin-right: 13px;
   font-size: 16px;
@@ -38,6 +51,20 @@
       border: 2px solid #ff8282;
       padding: 12px 14px;
     }
+
+    // &::before {
+    //   position: absolute;
+    //   content: url("../img/form/svg/icon-letter.svg");
+    //   display: block;
+    //   width: 19px;
+    //   height: 14px;
+    //   top: 0;
+    //   bottom: 0;
+    //   right: 20px;
+    //   margin: auto;
+    //   z-index: 2;
+    //   background-color: tomato;
+    // }
   }
 
   &:hover {
@@ -55,10 +82,18 @@
   }
 }
 
-.item-info__icon--letter {
-  display: block;
+.item-info__icon {
   position: absolute;
+
+  // &--letter {
+  //   position: absolute;
+  // }
 }
+
+// .item-info__icon--letter {
+//   display: block;
+//   position: absolute;
+// }
 
 @media (min-width: @tablet-width) {
   .item-info__field {
