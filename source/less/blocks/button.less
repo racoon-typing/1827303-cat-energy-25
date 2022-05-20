@@ -43,6 +43,26 @@
     text-transform: uppercase;
     color: @color-text-main;
   }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5eaa2f;
+  }
+}
+
+.button.button--disabled {
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+    background-color: #ebebeb;
+  }
 }
 
 @media (min-width: @tablet-width) {
