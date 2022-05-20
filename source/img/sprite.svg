@@ -34,7 +34,7 @@
         fill="#666" />
     </symbol>
 
-    <symbol id="icon-arrow" viewBox="0 0 24 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-arrow" viewBox="0 0 24 12" preserveAspectRatio="none" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path stroke="#000" stroke-width="2" d="M0 6h18" />
       <path d="m24 6-6.75 5.2V.8L24 6Z" fill="#000" />
     </symbol>
