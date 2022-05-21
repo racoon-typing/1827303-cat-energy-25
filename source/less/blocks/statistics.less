@@ -51,7 +51,7 @@
 
 .statistics__range-scale {
   position: relative;
-  width: 85px;
+  width: 100%;
   height: 14px;
   box-sizing: border-box;
   background-color: @color-main;
@@ -65,6 +65,10 @@
   height: 6px;
   border-radius: 6px;
   background-color: @color-accent;
+}
+
+.statistics__range-toggle {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -107,7 +111,20 @@
   }
 
   .statistics__range-slider {
-    width: 592px;
+    width: 590px;
+  }
+
+  .statistics__range-scale {
+    height: 6px;
+    background-color: #dcdcdc;
+    border: none;
+  }
+
+  .statistics__range-bar {
+    top: 0;
+    left: 0 !important;
+    width: 212px !important;
+    background-color: tomato;
   }
 }
 
