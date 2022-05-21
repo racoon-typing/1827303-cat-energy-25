@@ -3,14 +3,25 @@
     border: 1px solid #bababa;
   }
 
-  &:hover .control__mark--checkbox {
-    border: 1px solid #bababa;
-  }
-
-  &:disabled {
-    opacity: 0.3;
-  }
+  // & + input[disabled] .control__mark,
+  // & + input[disabled] .control__label {
+  //   opacity: 0.3;
+  // }
 }
+
+// .control__input[type="radio"] [disabled] .control__mark {
+//   opacity: 0.3;
+// }
+
+// .control__input:disabled .control__label {
+//   opacity: 0.3;
+// }
+
+// .control__input[disabled] .control__mark,
+// .control__input[disabled] .control__label {
+//   opacity: 0.3;
+// }
+
 
 .control__mark {
   position: absolute;
@@ -24,7 +35,6 @@
 
   &--checkbox {
     border-radius: unset;
-    border: 1px solid #cdcdcd;
   }
 }
 
