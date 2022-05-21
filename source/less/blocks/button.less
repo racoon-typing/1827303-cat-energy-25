@@ -16,6 +16,7 @@
   text-align: center;
   text-decoration: none;
   border: none;
+  cursor: pointer;
 
   &--main {
     font-size: 16px;
@@ -38,9 +39,14 @@
     font-size: 16px;
     line-height: 20px;
     display: flex;
+    padding: 0;
+    font-family: @main-font;
     align-items: center;
+    justify-content: center;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
+    border: none;
     color: @color-text-main;
   }
 
@@ -73,10 +79,28 @@
     }
 
     &--transparent-big {
+      position: relative;
       width: 70px;
       min-height: 40px;
       font-size: 20px;
       line-height: 30px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 45px;
+        height: 1px;
+        background-image: url("../../img/index/underline.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &:hover::before {
+        width: 47px;
+        background-image: url("../../img/index/underline-2.png");
+        background-color: transparent;
+      }
     }
   }
 }
