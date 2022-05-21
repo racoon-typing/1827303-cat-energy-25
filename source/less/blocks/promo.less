@@ -12,11 +12,18 @@
   padding-top: 27px;
   box-sizing: border-box;
   position: relative;
-  background-image: url("../img/index/background-promo.png");
+  background-image: url("../img/index/background-promo.jpg");
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
   z-index: 0;
+}
+
+@media (min-resolution: 2dppx) {
+  .promo__wrapper-title {
+    background-image: url("../img/index/background-promo@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .promo__wrapper-title::after {
@@ -163,10 +170,17 @@
     width: 720px;
     height: 694px;
     padding: 0;
-    background-image: url("../img/index/bg-promo-desktop.png");
+    background-image: url("../img/index/background-promo-desktop.jpg");
     background-position: center;
     background-repeat: no-repeat;
     z-index: 0;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .promo__wrapper-product {
+      background-image: url("../img/index/background-promo-desktop@2x.jpg");
+      background-size: 720px auto;
+    }
   }
 
   .promo__wrapper-product::after {
