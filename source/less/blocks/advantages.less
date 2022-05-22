@@ -130,21 +130,6 @@
     }
   }
 
-  // .advantages__item::before {
-  //   counter-increment: section;
-  //   content: counter(section) "";
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
-  //   display: inline-block;
-  //   margin: 0;
-  //   font-style: normal;
-  //   font-weight: 400;
-  //   font-size: 280px;
-  //   line-height: 280px;
-  //   color: #f2f2f2;
-  // }
-
   .advantages__item::after {
     width: 80px;
     height: 80px;
@@ -152,9 +137,14 @@
   }
 
   .advantages__item-text {
+    width: 245px;
     font-size: 16px;
     line-height: 24px;
     z-index: 2;
+
+    & br {
+      display: none;
+    }
   }
 }
 
