@@ -73,15 +73,20 @@
 
 @media (min-width: @desktop-width) {
   .statistic__description {
-    margin-bottom: 72px;
+    margin-bottom: 69px;
 
     & br {
       display: none;
     }
   }
 
-  .statistic__price-description {
+  .statistic__price-description-wrapper {
     width: 327px;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .statistic__price-description {
     margin-left: 0;
     text-align: left;
   }
