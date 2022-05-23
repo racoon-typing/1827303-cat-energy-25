@@ -39,6 +39,10 @@
   font-size: 14px;
   line-height: 20px;
   color: @color-text-second;
+
+  & br {
+    display: none;
+  }
 }
 
 .contacts__location {
@@ -64,7 +68,9 @@
 
   .contacts__adress-wrapper {
     width: 628px;
+    min-height: 87px;
     padding: 56px 70px;
+    align-items: center;
   }
 
   .contacts__offer {
@@ -78,6 +84,10 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+
+    & br {
+      display: block;
+    }
   }
 
   .contacts__location {

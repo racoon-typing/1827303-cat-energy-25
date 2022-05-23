@@ -51,6 +51,10 @@
   &--weight::after {
     background-image: url("../img/index/svg/icon_alarm.svg");
   }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__item::after {
@@ -93,16 +97,10 @@
   .advantages__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 134px;
+    column-gap: 140px;
     row-gap: 37px;
-
     counter-reset: section;
-    // list-style-type: list-item;
   }
-
-  // ol {
-  //   counter-reset: section;
-  // }
 
   .advantages__item {
     position: relative;
@@ -111,21 +109,25 @@
     margin-bottom: 0;
     padding: 0;
     padding-top: 151px;
-  }
 
-  .advantages__item::before {
-    counter-increment: section;
-    content: counter(section) "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: inline-block;
-    margin: 0;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 280px;
-    line-height: 280px;
-    color: #f2f2f2;
+    &::before {
+      counter-increment: section;
+      content: counter(section) "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      margin: 0;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+    }
+
+    &--nutritious::before {
+      right: 17px;
+    }
   }
 
   .advantages__item::after {
@@ -135,9 +137,14 @@
   }
 
   .advantages__item-text {
+    width: 245px;
     font-size: 16px;
     line-height: 24px;
     z-index: 2;
+
+    & br {
+      display: none;
+    }
   }
 }
 

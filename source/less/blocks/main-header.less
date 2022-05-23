@@ -16,11 +16,20 @@
   align-items: center;
   padding-top: 12px;
   padding-bottom: 15px;
+  padding-left: 20px;
 }
 
 .main-header__logo {
   display: block;
   margin-right: 56px;
+
+  &:hover .main-header__logo-icon {
+    opacity: 0.8;
+  }
+
+  &:active .main-header__logo-icon {
+    opacity: 0.6;
+  }
 }
 
 .main-header__logo-icon {
@@ -45,6 +54,7 @@
   .main-header__wrapper-logo {
     padding-top: 12px;
     padding-bottom: 15px;
+    padding-left: 0;
   }
 }
 

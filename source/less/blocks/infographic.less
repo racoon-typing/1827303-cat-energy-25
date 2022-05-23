@@ -17,23 +17,23 @@
 
 .infographic__indicator {
   margin: 0;
-  padding-top: 14px;
-  padding-bottom: 18px;
+  padding-top: 13px;
+  padding-bottom: 16px;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
   color: @color-text-main;
+  text-transform: uppercase;
 }
 
 .infographic__indicator-description {
   position: absolute;
-  top: 46px;
+  top: 44px;
   display: block;
-  width: min-content;
+  width: 87px;
   box-sizing: border-box;
-  padding: 0 14px;
   margin: 0;
   font-family: @second-font;
   font-style: normal;
@@ -49,13 +49,13 @@
   .infographic__wrapper {
     width: 162px;
     margin-right: 42px;
-    margin-bottom: 25px;
+    margin-bottom: 0;
   }
 
   .infographic__indicator {
     font-size: 30px;
     line-height: 37px;
-    padding-top: 15px;
+    padding-top: 14px;
     padding-bottom: 20px;
   }
 
@@ -66,16 +66,24 @@
     font-size: 14px;
     line-height: 14px;
     background-color: @color-main;
+
+    & br {
+      display: none;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .infographic__wrapper {
     margin-right: auto;
-    margin-bottom: 60px;
+    margin-bottom: 54px;
   }
 
   .infographic__indicator-description {
     background-color: @color-second;
+  }
+
+  .infographic__wrapper + .infographic__wrapper {
+    margin-right: 70px;
   }
 }
