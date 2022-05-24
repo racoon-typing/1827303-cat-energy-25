@@ -9,6 +9,8 @@
 }
 
 .main-nav__link {
+  position: relative;
+  display: block;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -17,6 +19,26 @@
   text-decoration: none;
   color: @color-text-main;
   background-color: @color-main;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__link--current::before {
+  position: absolute;
+  content: "";
+  width: 168px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: @color-accent;
+  bottom: -10px;
+  right: 0;
+  left: 0;
 }
 
 .main-nav__toggle {
@@ -134,8 +156,6 @@
   }
 
   .main-nav__link {
-    position: relative;
-    display: block;
     padding-bottom: 12px;
     font-weight: 400;
     font-size: 18px;
@@ -143,13 +163,8 @@
   }
 
   .main-nav__link--current::before {
-    position: absolute;
-    content: "";
-    height: 2px;
-    background-color: @color-accent;
+    width: 100%;
     bottom: 2px;
-    right: 0;
-    left: 0;
   }
 }
 
