@@ -7,7 +7,8 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import del from 'del';
 import svgo from 'gulp-svgmin';
-
+import svgstore from 'gulp-svgstore';
+import squoosh from 'gulp-libsquoosh';
 import browser from 'browser-sync';
 
 
@@ -68,7 +69,6 @@ export const clean = () => {
 return del('build');
 };
 
-
 // StylesMin
 
 const stylesMin = () => {
@@ -86,11 +86,56 @@ csso()
 
 // SVG
 
-export const svg = () =>
+const svg = () =>
 gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg', '!source/img/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img/svg'));
 
+const sprite = () => {
+return gulp.src('source/img/icons/*.svg')
+.pipe(svgo())
+.pipe(svgstore({
+inlineSvg: true
+}))
+.pipe(rename('sprite.svg'))
+.pipe(gulp.dest('build/img/sprite'));
+}
+
+// Images
+
+const optimizeImages = () => {
+return gulp.src('source/img/**/*.{png,jpg}')
+.pipe(squoosh())
+.pipe(gulp.dest('build/img'))
+}
+
+// WebP
+
+const createWebp = () => {
+return gulp.src('source/img/**/*.{png,jpg}')
+.pipe(squoosh({
+webp: {}
+}))
+.pipe(gulp.dest('build/img'))
+}
+
+// Build
+
+export const build = gulp.series(
+clean,
+copy,
+optimizeImages,
+gulp.parallel(
+styles,
+html,
+scripts,
+svg,
+sprite,
+createWebp
+),
+);
+
+// Default
 
 export default gulp.series(
   styles, server, watcher
