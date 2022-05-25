@@ -43,7 +43,7 @@
 
 .info__item:nth-child(1)::before {
   left: 22px;
-  top: 29px;
+  top: 24px;
 }
 
 .info__item:nth-child(1)::after {
@@ -52,7 +52,7 @@
   width: 36px;
   height: 50px;
   left: 29px;
-  top: 26px;
+  top: 21px;
   z-index: 2;
   background-image: url("../img/index/svg/cat-thin.svg");
   background-repeat: no-repeat;
@@ -111,6 +111,7 @@
 }
 
 .info__link {
+  position: relative;
   display: block;
   min-height: 24px;
   width: max-content;
@@ -128,9 +129,30 @@
   text-transform: uppercase;
   color: @color-text-main;
   background-color: @color-second;
-  background-image: url("../img/index/svg/icon_arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center right;
+
+  &--pro {
+    padding-right: 49px;
+  }
+
+  &:hover .info__link-arrow {
+    width: 32px;
+    height: 12px;
+    right: 0;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.info__link-arrow {
+  position: absolute;
+  width: 24px;
+  height: 12px;
+  top: 0;
+  bottom: 0;
+  right: 8px;
+  margin: auto;
 }
 
 @media (min-width: @tablet-width) {
@@ -160,9 +182,18 @@
     margin-bottom: 48px;
   }
 
+  .info__text::before {
+    display: none;
+  }
+
   .info__link {
     font-size: 20px;
     line-height: 30px;
+    padding-right: 57px;
+
+    &--pro {
+      padding-right: 59px;
+    }
   }
 
   .info__item::before {
@@ -171,7 +202,7 @@
   }
 
   .info__item:nth-child(1)::before {
-    top: 81px;
+    top: 92px;
     left: 446px;
   }
 
@@ -260,5 +291,9 @@
     top: 67px;
     left: 32px;
     background-size: 134px;
+  }
+
+  .info__link {
+    padding-right: 60px;
   }
 }

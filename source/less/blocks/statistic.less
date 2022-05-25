@@ -18,12 +18,20 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 25px;
+}
+
+.statistic__price-description-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 188px;
+  margin: 0 auto;
 }
 
 .statistic__price-description {
-  display: block;
-  width: 100%;
   margin: 0;
+  font-size: 14px;
+  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -44,11 +52,17 @@
     display: block;
   }
 
+  .statistic__price-description-wrapper {
+    flex-direction: column;
+    margin: 0;
+    margin-left: auto;
+  }
+
   .statistic__price-description {
     width: max-content;
     margin-left: auto;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 1.5;
     text-align: right;
   }
 
@@ -59,11 +73,20 @@
 
 @media (min-width: @desktop-width) {
   .statistic__description {
-    margin-bottom: 72px;
+    margin-bottom: 69px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  .statistic__price-description-wrapper {
+    width: 327px;
+    flex-direction: row;
+    margin: 0;
   }
 
   .statistic__price-description {
-    width: 327px;
     margin-left: 0;
     text-align: left;
   }

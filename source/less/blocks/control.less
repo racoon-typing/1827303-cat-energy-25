@@ -1,3 +1,13 @@
+.control {
+  &:hover .control__mark {
+    border: 1px solid #bababa;
+  }
+
+  &--disabled {
+    opacity: 0.3;
+  }
+}
+
 .control__mark {
   position: absolute;
   left: 0;
@@ -41,8 +51,8 @@
   }
 
   .control__input[type="radio"]:checked + .control__mark::before {
-    top: 11px;
-    left: 10px;
+    top: 10px;
+    left: 11px;
     width: 18px;
     height: 18px;
   }
