@@ -148,7 +148,6 @@ gulp.parallel(
 stylesMin,
 svg,
 sprite,
-createWebp
 ),
 gulp.series(
 server,
