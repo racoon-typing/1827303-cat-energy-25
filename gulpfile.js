@@ -109,6 +109,11 @@ return gulp.src('source/img/**/*.{png,jpg}')
 .pipe(gulp.dest('build/img'))
 }
 
+const copyImages = () => {
+return gulp.src('source/img/**/*.{png,jpg}')
+.pipe(gulp.dest('build/img'))
+}
+
 // WebP
 
 const createWebp = () => {
@@ -136,5 +141,16 @@ createWebp
 // Default
 
 export default gulp.series(
-  styles, server, watcher
-);
+clean,
+copy,
+copyImages,
+gulp.parallel(
+stylesMin,
+svg,
+sprite,
+createWebp
+),
+gulp.series(
+server,
+watcher
+));
