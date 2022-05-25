@@ -126,9 +126,7 @@ clean,
 copy,
 optimizeImages,
 gulp.parallel(
-styles,
-html,
-scripts,
+stylesMin,
 svg,
 sprite,
 createWebp
