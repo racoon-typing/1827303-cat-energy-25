@@ -30,26 +30,6 @@
     background-color: @color-second;
   }
 
-  &--transparent {
-    width: 49px;
-    min-height: 30px;
-    background-color: transparent;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    padding: 0;
-    font-family: @main-font;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: none;
-    color: @color-text-main;
-  }
-
   &:hover {
     background-color: #5eaa2f;
   }
@@ -57,6 +37,43 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #5eaa2f;
+  }
+}
+
+
+.button-transparent {
+  position: relative;
+  width: 49px;
+  min-height: 30px;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  padding: 0;
+  font-family: @main-font;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  color: @color-text-main;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover::before {
+    width: 47px;
+    height: 1px;
+    background-image: url("../../img/index/underline-2.png");
+    background-color: transparent;
   }
 }
 
@@ -77,8 +94,10 @@
       font-size: 20px;
       line-height: 1;
     }
+  }
 
-    &--transparent-big {
+  .button-transparent {
+    &--big {
       position: relative;
       width: 70px;
       min-height: 40px;
