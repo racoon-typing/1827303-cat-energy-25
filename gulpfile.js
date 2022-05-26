@@ -135,12 +135,7 @@ stylesMin,
 svg,
 sprite,
 createWebp
-),
-gulp.series(
-server,
-watcher
-)
-);
+));
 
 // Default
 
