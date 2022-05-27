@@ -116,7 +116,7 @@ return gulp.src('source/img/**/*.{png,jpg}')
 
 // WebP
 
-export const createWebp = () => {
+const createWebp = () => {
 return gulp.src('source/img/**/*.{png,jpg}')
 .pipe(squoosh({
 webp: {}
