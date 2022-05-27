@@ -116,7 +116,7 @@ return gulp.src('source/img/**/*.{png,jpg}')
 
 // WebP
 
-const createWebp = () => {
+export const createWebp = () => {
 return gulp.src('source/img/**/*.{png,jpg}')
 .pipe(squoosh({
 webp: {}
@@ -147,6 +147,7 @@ gulp.parallel(
 stylesMin,
 svg,
 sprite,
+createWebp
 ),
 gulp.series(
 server,
