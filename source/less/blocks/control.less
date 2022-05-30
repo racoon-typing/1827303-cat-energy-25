@@ -9,12 +9,10 @@
 }
 
 .control__input {
-  &:disabled + .control__mark {
-    opacity: 0.3;
-  }
-
+  &:disabled + .control__mark,
   &:disabled + .control__label {
     opacity: 0.3;
+    color: rgba(34, 34, 34, 0.3);
   }
 }
 
