@@ -10,14 +10,24 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import squoosh from 'gulp-libsquoosh';
 import browser from 'browser-sync';
-// import html from 'gulp-htmlmin';
+import htmlmin from 'gulp-htmlmin';
+import minify from 'gulp-minify';
 
 
 // HTMl
-// const html = () => {
-//   return gulp.src('source/*.html')
-//   .pipe(gulp.dest('build'));
-// }
+gulp.task('minify', () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+});
+
+// JS
+gulp.task('compress', function() {
+  gulp.src('source/*.js')
+    .pipe(minify())
+    .pipe(gulp.dest('build'))
+});
+
 
 // Styles
 
@@ -75,7 +85,7 @@ const copy = (done) => {
 gulp.src([
 'source/fonts/*.{woff2,woff}',
 'source/*.ico',
-'source/*.html',
+// 'source/*.html',
 'source/*.webmanifest',
 'source/*.js'
 ], {
@@ -136,6 +146,7 @@ webp: {}
 export const build = gulp.series(
 clean,
 copy,
+minify,
 optimizeImages,
 gulp.parallel(
 stylesMin,
@@ -149,6 +160,7 @@ createWebp
 export default gulp.series(
 clean,
 copy,
+minify,
 copyImages,
 gulp.parallel(
 stylesMin,
