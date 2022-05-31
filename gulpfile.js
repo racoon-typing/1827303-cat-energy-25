@@ -70,12 +70,13 @@ const watcher = () => {
 }
 
 // Copy
-// 'source/*.html',
+
 
 const copy = (done) => {
 gulp.src([
 'source/fonts/*.{woff2,woff}',
 'source/*.ico',
+'source/*.html',
 'source/*.webmanifest',
 'source/*.js'
 ], {
