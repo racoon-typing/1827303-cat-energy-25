@@ -14,7 +14,7 @@ import html from 'gulp-htmlmin';
 
 
 // HTMl
-const html = () => {
+export const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('build'))
