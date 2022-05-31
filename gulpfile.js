@@ -10,15 +10,14 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import squoosh from 'gulp-libsquoosh';
 import browser from 'browser-sync';
-import html from 'gulp-htmlmin';
+// import html from 'gulp-htmlmin';
 
 
 // HTMl
-export const html = () => {
-  return gulp.src('source/*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('build'))
-}
+// const html = () => {
+//   return gulp.src('source/*.html')
+//   .pipe(gulp.dest('build'));
+// }
 
 // Styles
 
