@@ -10,8 +10,15 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import squoosh from 'gulp-libsquoosh';
 import browser from 'browser-sync';
+import htmlmin from 'gulp-htmlmin';
 
 
+// HTMl
+const htmlmin = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('build'))
+}
 
 // Styles
 
@@ -63,12 +70,12 @@ const watcher = () => {
 }
 
 // Copy
+// 'source/*.html',
 
 const copy = (done) => {
 gulp.src([
 'source/fonts/*.{woff2,woff}',
 'source/*.ico',
-'source/*.html',
 'source/*.webmanifest',
 'source/*.js'
 ], {
