@@ -11,7 +11,7 @@ import svgstore from 'gulp-svgstore';
 import squoosh from 'gulp-libsquoosh';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
-import minify from 'gulp-minify';
+import compress from 'gulp-minify';
 
 
 // HTMl
@@ -146,7 +146,7 @@ webp: {}
 export const build = gulp.series(
 clean,
 copy,
-minify,
+htmlmin,
 optimizeImages,
 gulp.parallel(
 stylesMin,
@@ -160,7 +160,7 @@ createWebp
 export default gulp.series(
 clean,
 copy,
-minify,
+htmlmin,
 copyImages,
 gulp.parallel(
 stylesMin,
