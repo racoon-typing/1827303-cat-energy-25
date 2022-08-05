@@ -38,7 +38,8 @@ export const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -85,7 +86,7 @@ const copy = (done) => {
 gulp.src([
 'source/fonts/*.{woff2,woff}',
 'source/*.ico',
-// 'source/*.html',
+'source/*.html',
 'source/*.webmanifest',
 'source/*.js'
 ], {
@@ -146,7 +147,7 @@ webp: {}
 export const build = gulp.series(
 clean,
 copy,
-htmlmin,
+// htmlmin,
 optimizeImages,
 gulp.parallel(
 stylesMin,
@@ -155,12 +156,12 @@ sprite,
 createWebp
 ));
 
-// Default
+// // Default
 
 export default gulp.series(
 clean,
 copy,
-htmlmin,
+// htmlmin,
 copyImages,
 gulp.parallel(
 stylesMin,
