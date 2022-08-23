@@ -15,19 +15,19 @@ import compress from 'gulp-minify';
 
 
 // HTMl
-gulp.task('minify', () => {
-  return gulp.src('source/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'));
-});
+
+// gulp.task('minify', () => {
+//   return gulp.src('source/*.html')
+//     .pipe(htmlmin({ collapseWhitespace: true }))
+//     .pipe(gulp.dest('build'));
+// });
 
 // JS
-gulp.task('compress', function() {
-  gulp.src('source/*.js')
-    .pipe(minify())
-    .pipe(gulp.dest('build'))
-});
-
+// gulp.task('compress', function() {
+//   gulp.src('source/*.js')
+//     .pipe(minify())
+//     .pipe(gulp.dest('build'))
+// });
 
 // Styles
 
